@@ -4,6 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Exercise3 Project.");
+        Console.Write("What is the magic number?");
+        string magicNumber = Console.ReadLine();
+        int magic = int.Parse(magicNumber);
+        Console.Write("What is your guess?");
+        string guesses = Console.ReadLine();
+        int guess = int.Parse(guesses);
+
     }
 }
