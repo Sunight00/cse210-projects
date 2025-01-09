@@ -45,12 +45,14 @@ class Program
         Console.WriteLine($"The average is : {average}");
         Console.WriteLine($"The largest number is: {numbers.Max()}");
         Console.WriteLine($"The smallest number is: {positiveNumbers.Min()}");
-        int[] letters = numbers.ToArray();
-        Array.Sort(letters);
 
-    foreach (int letter in letters)
-    {
-      Console.WriteLine(letter);
-    }
+        int[] ascend = numbers.ToArray();
+        Array.Sort(ascend);
+        // Above is me sorting through my list "numbers" 
+        foreach (int num in ascend)
+        {
+            Console.WriteLine(num);
+            // using a for loop to print the list numbers in a ascending order
+        }
     }
 }
