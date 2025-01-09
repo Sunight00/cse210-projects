@@ -31,27 +31,47 @@ class Program
             if (x>=7)
             {
                 string sign = "+";
-                Console.WriteLine("B {sign} ");
+                Console.WriteLine($"B{sign}");
             }
             else if (x<3)
             {
                 string sign = "-";
-                Console.WriteLine($"A{sign}");
+                Console.WriteLine($"B{sign}");
             }
         }
         else if (grade>=70)
         {
-            Console.WriteLine("C");
+            int x = grade % 10;
+            if (x>=7)
+            {
+                string sign = "+";
+                Console.WriteLine($"C{sign} ");
+            }
+            else if (x<3)
+            {
+                string sign = "-";
+                Console.WriteLine($"C{sign}");
+            }
         }
         else if (grade>=60)
         {
-            Console.WriteLine("D");
+            int x = grade % 10;
+            if (x>=7)
+            {
+                string sign = "+";
+                Console.WriteLine($"D{sign} ");
+            }
+            else if (x<3)
+            {
+                string sign = "-";
+                Console.WriteLine($"D{sign}");
         }
         else if (grade<60)
         {
             Console.WriteLine("F");
         }
     }
+}
 }
 
         
