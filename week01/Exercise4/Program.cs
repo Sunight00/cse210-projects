@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Drawing;
 
 class Program
 {
@@ -43,7 +44,7 @@ class Program
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The average is : {average}");
         Console.WriteLine($"The largest number is: {numbers.Max()}");
-        Console.WriteLine($"The smallest number is: {numbers.Min()}");
+        Console.WriteLine($"The smallest number is: {positiveNumbers.Min()}");
    
     }
 }
