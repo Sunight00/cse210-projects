@@ -23,7 +23,10 @@ class Program
                 string sign = "-";
                 Console.WriteLine($"A{sign}");
             }
-            
+            else 
+            {
+                Console.WriteLine("A");
+            } 
         }
         else if (grade>=80)
         {
@@ -37,6 +40,10 @@ class Program
             {
                 string sign = "-";
                 Console.WriteLine($"B{sign}");
+            }
+            else 
+            {
+                Console.WriteLine("B");
             }
         }
         else if (grade>=70)
@@ -52,6 +59,10 @@ class Program
                 string sign = "-";
                 Console.WriteLine($"C{sign}");
             }
+            else 
+            {
+                Console.WriteLine("C");
+            }
         }
         else if (grade>=60)
         {
@@ -65,13 +76,18 @@ class Program
             {
                 string sign = "-";
                 Console.WriteLine($"D{sign}");
+            }
+            else
+            {
+                Console.WriteLine("D");
+            }
+
         }
         else if (grade<60)
         {
             Console.WriteLine("F");
         }
     }
-}
 }
 
         
