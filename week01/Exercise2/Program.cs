@@ -17,5 +17,17 @@ class Program
         {
             Console.WriteLine("B");
         }
+        else if (grade>=70)
+        {
+            Console.WriteLine("C");
+        }
+        else if (grade>=60)
+        {
+            Console.WriteLine("D");
+        }
+        else if (grade<60)
+        {
+            Console.WriteLine("F");
+        }
     }
 }
