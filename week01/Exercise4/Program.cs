@@ -35,12 +35,10 @@ class Program
         //created list for positive numbers
         foreach (int num in numbers)
         {
-            if (num > 0 && num < numbers.Max())
+            if (num > 0)
             {
-                eg = num;
-                break;
+                positiveNumbers.Add(num);
             }
-
         }
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The average is : {average}");
