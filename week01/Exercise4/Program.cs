@@ -22,15 +22,30 @@ class Program
         }
         //Above is a loop that end when 0 is inputed and it appends other figures to list
         int sum=0;
-        int average=0;
+        double average=0;
+        // I previously chose int for average but it wasn't displaying the decimal points
         foreach (int num in numbers)
         {
             sum += num;
-            average = sum / numbers.Count;
+            /*average = sum / numbers.Count;
+            this wasn't display decimal point*/
+           average = numbers.Average();
+        }
+        List<int> positiveNumbers = new List<int>();
+        //created list for positive numbers
+        foreach (int num in numbers)
+        {
+            if (num > 0 && num < numbers.Max())
+            {
+                eg = num;
+                break;
+            }
+
         }
         Console.WriteLine($"The sum is: {sum}");
-        Console.WriteLine($"The average is: {average}");
+        Console.WriteLine($"The average is : {average}");
         Console.WriteLine($"The largest number is: {numbers.Max()}");
-        
+        Console.WriteLine(eg);
+   
     }
 }
