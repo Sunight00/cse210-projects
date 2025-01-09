@@ -43,7 +43,7 @@ class Program
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The average is : {average}");
         Console.WriteLine($"The largest number is: {numbers.Max()}");
-        Console.WriteLine(eg);
+        Console.WriteLine($"The smallest number is: {numbers.Min()}");
    
     }
 }
