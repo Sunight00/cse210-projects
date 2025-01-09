@@ -45,12 +45,12 @@ class Program
         Console.WriteLine($"The average is : {average}");
         Console.WriteLine($"The largest number is: {numbers.Max()}");
         Console.WriteLine($"The smallest number is: {positiveNumbers.Min()}");
+        int[] letters = numbers.ToArray();
+        Array.Sort(letters);
 
-        
-        int[] numascend= numbers.ToArray();
-        foreach (int nums in numascend)
-        {
-            Console.WriteLine(nums);
-        }
+    foreach (int letter in letters)
+    {
+      Console.WriteLine(letter);
+    }
     }
 }
