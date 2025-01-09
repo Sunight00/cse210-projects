@@ -6,7 +6,6 @@ class Program
     {
         Random randomGenerator = new Random();
         int magic = randomGenerator.Next(1, 100);
-        Console.WriteLine(magic);
         Console.Write("What is your guess?");
         string guesses = Console.ReadLine();
         int guess = int.Parse(guesses);
