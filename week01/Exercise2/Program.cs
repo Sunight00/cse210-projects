@@ -11,14 +11,33 @@ class Program
 
         if (grade>=90)
         {
-            Console.WriteLine("A");
+            /* this is to determine the last digit in grade using the modulo divided by 10. 
+            Then i can assign the + or - to the grade output*/
             int x = grade % 10;
-            if (x)
-            Console.WriteLine(x);
+            if (x>=7)
+            {
+                Console.WriteLine("A");
+            }
+            else if (x<3)
+            {
+                string sign = "-";
+                Console.WriteLine($"A{sign}");
+            }
+            
         }
         else if (grade>=80)
         {
-            Console.WriteLine("B");
+            int x = grade % 10;
+            if (x>=7)
+            {
+                string sign = "+";
+                Console.WriteLine("B {sign} ");
+            }
+            else if (x<3)
+            {
+                string sign = "-";
+                Console.WriteLine($"A{sign}");
+            }
         }
         else if (grade>=70)
         {
