@@ -28,9 +28,9 @@ class Program
             sum += num;
             average = sum / numbers.Count;
         }
-        Console.WriteLine($"Sum is {sum}");
-        Console.WriteLine($"Sum is {average}");
-        Console.WriteLine($"Average {numbers.max()}")
+        Console.WriteLine($"The sum is: {sum}");
+        Console.WriteLine($"The average is: {average}");
+        Console.WriteLine($"The largest number is: {numbers.Max()}");
         
     }
 }
