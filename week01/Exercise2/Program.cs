@@ -12,6 +12,9 @@ class Program
         if (grade>=90)
         {
             Console.WriteLine("A");
+            int x = grade % 10;
+            if (x)
+            Console.WriteLine(x);
         }
         else if (grade>=80)
         {
@@ -31,3 +34,6 @@ class Program
         }
     }
 }
+
+        
+        
