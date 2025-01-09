@@ -45,6 +45,7 @@ class Program
         Console.WriteLine($"The average is : {average}");
         Console.WriteLine($"The largest number is: {numbers.Max()}");
         Console.WriteLine($"The smallest number is: {positiveNumbers.Min()}");
+        Console.WriteLine("The sorted list is:");
 
         int[] ascend = numbers.ToArray();
         Array.Sort(ascend);
