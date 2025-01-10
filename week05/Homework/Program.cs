@@ -20,8 +20,14 @@ class Program
             int favnum = int.Parse(Console.ReadLine()); // played around with this line to get it to work
             return favnum;
         }
+        static void result(string user, int favnum)
+        {
+            int square = favnum*favnum;
+            Console.WriteLine($"{user}, the the square of your number is {square} .");
+        }
         welcome();
-        name();
-        number();
+        string person =name();
+        int num = number();
+        result(person, num);
     }
 }
