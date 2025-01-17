@@ -5,8 +5,7 @@ public class Entry
     public string _entryText;
     
     public void Display()
-    {   PromptGenerator prompt = new PromptGenerator();
-        _promptText=prompt.GetRandomPrompt();
+    { 
         DateTime theCurrentTime = DateTime.Now;
         _date = theCurrentTime.ToShortDateString();
         Console.WriteLine(_date);
