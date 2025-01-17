@@ -30,6 +30,11 @@ public class Journal
 
     public void SaveToFile (string file)
     {
+        Console.WriteLine("");
+        Console.WriteLine("Where would you save file: ");
+        Console.WriteLine("1.Desktop");
+        Console.WriteLine("2.Document");
+        string path = Console.ReadLine();
         
     }
 

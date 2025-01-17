@@ -28,6 +28,9 @@ class Program
                 Console.Write("Enter File Name: ");
                 string file = Console.ReadLine();
                 newJournal.SaveToFile(file);
+   
+
+
             }
         }   
     }
