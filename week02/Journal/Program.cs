@@ -1,17 +1,35 @@
 using System;
+using System.Runtime.InteropServices;
 
 class Program
 {
     static void Main(string[] args)
-    {   PromptGenerator prompt = new PromptGenerator();
-        string _prompt=prompt.GetRandomPrompt();
-        Console.WriteLine(_prompt);
-        
-        Entry newEntry = new Entry();
-        string response = Console.ReadLine();
-        newEntry._entryText=response;
-        newEntry._promptText=_prompt;
-        newEntry.Display();
-       
+    {
+        Console.WriteLine("Welcome to the program");
+        Journal newJournal = new Journal();
+        while(true)
+        {
+            Console.WriteLine("1.Create Entry");
+            Console.WriteLine("2.Show Entries");
+            Console.WriteLine("3.Save File");
+            Console.WriteLine("4.Exit");
+            Console.Write("Enter Your Selection: ");
+            string response = Console.ReadLine();
+            if (response== "1")
+            {
+                newJournal.AddEntry();
+            }
+            else if ( response == "2")
+            {
+                newJournal.DisplayAll();
+            }
+            else if ( response == "3")
+            {
+                Console.Write("Enter File Name: ");
+                string file = Console.ReadLine();
+                newJournal.SaveToFile(file);
+            }
+        }   
     }
+   
 }
