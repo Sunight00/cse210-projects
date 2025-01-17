@@ -6,7 +6,6 @@ class Program
     {
         Entry newEntry = new Entry();
         newEntry._date="";
-        newEntry._promptText=
         newEntry._entryText="";
         newEntry.Display();
     }
