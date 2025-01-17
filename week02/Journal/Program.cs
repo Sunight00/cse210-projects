@@ -6,13 +6,10 @@ class Program
     {   PromptGenerator prompt = new PromptGenerator();
         string _promptText=prompt.GetRandomPrompt();
         Console.WriteLine(_promptText);
-
-
-         string response = Console.ReadLine();
-
         Entry newEntry = new Entry();
-        
-       
+        string response = Console.ReadLine();
         newEntry._entryText=response;
+        newEntry.Display();
+       
     }
-}newEntry.Display();
+}
