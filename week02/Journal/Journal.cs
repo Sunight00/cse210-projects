@@ -1,5 +1,7 @@
 using System.Data;
 using System.IO;
+using System.Linq.Expressions;
+using System.Net.Mime;
 using System.Text;
 
 public class Journal
@@ -24,7 +26,7 @@ public class Journal
     {
         foreach(var newEntry in _entries)
         {
-            Console.WriteLine("_____");
+            Console.WriteLine("______________");
             newEntry.Display();
         }
         Console.WriteLine("");
@@ -46,6 +48,8 @@ public class Journal
 
              using (StreamWriter outputFile = new StreamWriter(path))
              {
+
+                string content =newEntry.
                 outputFile.WriteLine("This will be the first line in the file.");
              }
              
