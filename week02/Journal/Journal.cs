@@ -1,4 +1,6 @@
 using System.Data;
+using System.IO;
+using System.Text;
 
 public class Journal
 {
@@ -31,11 +33,21 @@ public class Journal
     public void SaveToFile (string file)
     {
         Console.WriteLine("");
-        Console.WriteLine("Where would you save file: ");
+        Console.WriteLine("Choose File Location");
         Console.WriteLine("1.Desktop");
         Console.WriteLine("2.Document");
+        Console.WriteLine("Where would you save file: ");
         string path = Console.ReadLine();
-        
+        if (path == "1")
+        {
+             path = $@"c:\Users\RUKN AL BAB\Desktop\{file}";
+             using (FileStream fs = File.Create(path));
+        }
+        else if ( path == "2")
+        {
+            path = $@"c:\Users\RUKN AL BAB\Documents\{file}";
+             using (FileStream fs = File.Create(path));
+        }
     }
 
     public void LoadFromFile ( string file)
