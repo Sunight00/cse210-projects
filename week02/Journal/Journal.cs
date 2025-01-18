@@ -48,10 +48,7 @@ public class Journal
 
              using (StreamWriter outputFile = new StreamWriter(path))
              {
-            foreach (var entry in _entries)
-            {
-                
-            }
+
              }
         }
         else if ( path == "2")
@@ -60,7 +57,6 @@ public class Journal
              using (FileStream fs = File.Create(path));
         }
     }
-
     public void LoadFromFile ( string file)
     {
 
