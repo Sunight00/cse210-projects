@@ -53,7 +53,7 @@ public class Journal
         Console.WriteLine("");
         if (path == "1")
         {
-             path = $@"c:\Users\RUKN AL BAB\Desktop\{file}.txt";
+             path = $@"c:\Users\RUKN AL BAB\Desktop\{file}.csv";
              using (FileStream fs = File.Create(path));
 
              using (StreamWriter outputFile = new StreamWriter(path))
@@ -66,7 +66,7 @@ public class Journal
         }
         else if ( path == "2")
         {
-            path = $@"c:\Users\RUKN AL BAB\Documents\{file}.txt";
+            path = $@"c:\Users\RUKN AL BAB\Documents\{file}.csv";
              using (StreamWriter outputFile = new StreamWriter(path))
              {
                 foreach(string entry in myEntry)
@@ -87,13 +87,13 @@ public class Journal
 
         if (path == "1")
         {
-            path = $@"c:\Users\RUKN AL BAB\Desktop\{file}.txt";
+            path = $@"c:\Users\RUKN AL BAB\Desktop\{file}.csv";
             string fileContents = File.ReadAllText(path);
             Console.WriteLine(fileContents);
         }
         else if (path == "2")
         {
-            path = $@"c:\Users\RUKN AL BAB\Documents\{file}.txt";
+            path = $@"c:\Users\RUKN AL BAB\Documents\{file}.csv";
             string fileContents = File.ReadAllText(path);
             Console.WriteLine(fileContents);
         }
