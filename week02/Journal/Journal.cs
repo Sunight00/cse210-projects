@@ -7,6 +7,7 @@ using System.Text;
 public class Journal
 {
     public List<Entry> _entries=new List<Entry>();
+    List<string> myEntry = new List<string>();
 
     public void AddEntry()
     {
@@ -19,6 +20,15 @@ public class Journal
         newEntry._entryText=response;
         newEntry._promptText=_prompt;
         _entries.Add(newEntry);
+
+        // my way out 
+        DateTime theCurrentTime = DateTime.Now;
+        string date = theCurrentTime.ToShortDateString();
+        myEntry.Add($"Date,{date}");
+        myEntry.Add($"Prompt,{_prompt}");
+        myEntry.Add($"Response,{response}");
+        myEntry.Add("");
+        
     }
     
 
@@ -48,17 +58,35 @@ public class Journal
 
              using (StreamWriter outputFile = new StreamWriter(path))
              {
-
+                foreach(string entry in myEntry)
+                {
+                    outputFile.WriteLine(entry);
+                }
              }
         }
         else if ( path == "2")
         {
             path = $@"c:\Users\RUKN AL BAB\Documents\{file}.txt";
-             using (FileStream fs = File.Create(path));
+             using (StreamWriter outputFile = new StreamWriter(path))
+             {
+                foreach(string entry in myEntry)
+                {
+                    outputFile.WriteLine(entry);
+                }
+             }
+
         }
     }
     public void LoadFromFile ( string file)
     {
+        Console.WriteLine("1.Desktop");
+        Console.WriteLine("2.Document");
+        Console.Write("Load File From;");
+        string path = Console.ReadLine();
 
+        if (path == "1")
+        {
+            path = $@"c:\Users\RUKN AL BAB\Desktop\{file}.txt";
+        }
     }
 }

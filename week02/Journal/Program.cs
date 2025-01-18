@@ -28,10 +28,17 @@ class Program
                 Console.Write("Enter File Name: ");
                 string file = Console.ReadLine();
                 newJournal.SaveToFile(file);
-   
-
-
             }
+            else if (response == "4")
+            {
+                Console.Write("Enter File Name: ");
+                string file = Console.ReadLine();
+                newJournal.LoadFromFile(file);
+            }
+
+
+
+            Console.WriteLine("");
         }   
     }
    
