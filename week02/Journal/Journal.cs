@@ -36,16 +36,34 @@ public class Journal
         Console.WriteLine("Choose File Location");
         Console.WriteLine("1.Desktop");
         Console.WriteLine("2.Document");
-        Console.WriteLine("Where would you save file: ");
+        Console.Write("Where would you save file: ");
         string path = Console.ReadLine();
+        Console.WriteLine("");
         if (path == "1")
         {
-             path = $@"c:\Users\RUKN AL BAB\Desktop\{file}";
+             path = $@"c:\Users\RUKN AL BAB\Desktop\{file}.txt";
              using (FileStream fs = File.Create(path));
+
+             using (StreamWriter outputFile = new StreamWriter(path))
+             {
+                outputFile.WriteLine("This will be the first line in the file.");
+             }
+             
+
+
+
+
+
+
+
+
+
+
+
         }
         else if ( path == "2")
         {
-            path = $@"c:\Users\RUKN AL BAB\Documents\{file}";
+            path = $@"c:\Users\RUKN AL BAB\Documents\{file}.txt";
              using (FileStream fs = File.Create(path));
         }
     }
