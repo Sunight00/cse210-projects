@@ -81,12 +81,21 @@ public class Journal
     {
         Console.WriteLine("1.Desktop");
         Console.WriteLine("2.Document");
-        Console.Write("Load File From;");
+        Console.Write("Load File From:");
         string path = Console.ReadLine();
+        Console.WriteLine("");
 
         if (path == "1")
         {
             path = $@"c:\Users\RUKN AL BAB\Desktop\{file}.txt";
+            string fileContents = File.ReadAllText(path);
+            Console.WriteLine(fileContents);
+        }
+        else if (path == "2")
+        {
+            path = $@"c:\Users\RUKN AL BAB\Documents\{file}.txt";
+            string fileContents = File.ReadAllText(path);
+            Console.WriteLine(fileContents);
         }
     }
 }

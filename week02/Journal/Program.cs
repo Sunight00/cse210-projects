@@ -12,7 +12,8 @@ class Program
             Console.WriteLine("1.Create Entry");
             Console.WriteLine("2.Show Entries");
             Console.WriteLine("3.Save File");
-            Console.WriteLine("4.Exit");
+            Console.WriteLine("4.Load File");
+            Console.WriteLine("5.Quit");
             Console.Write("Enter Your Selection: ");
             string response = Console.ReadLine();
             if (response== "1")
@@ -35,9 +36,10 @@ class Program
                 string file = Console.ReadLine();
                 newJournal.LoadFromFile(file);
             }
-
-
-
+            else if (response=="5")
+            {
+                break;
+            }
             Console.WriteLine("");
         }   
     }
