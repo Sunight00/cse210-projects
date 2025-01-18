@@ -26,7 +26,7 @@ public class Journal
     {
         foreach(var newEntry in _entries)
         {
-            Console.WriteLine("______________");
+            Console.WriteLine($"______________");
             newEntry.Display();
         }
         Console.WriteLine("");
@@ -48,22 +48,11 @@ public class Journal
 
              using (StreamWriter outputFile = new StreamWriter(path))
              {
-
-                string content =newEntry.
-                outputFile.WriteLine("This will be the first line in the file.");
+            foreach (var entry in _entries)
+            {
+                
+            }
              }
-             
-
-
-
-
-
-
-
-
-
-
-
         }
         else if ( path == "2")
         {
