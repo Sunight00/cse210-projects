@@ -5,11 +5,18 @@ public class Reference
     private int _verse;
     private int _endVerse;
 
- 
+    public Reference()
+    {
+        _book="Genesis";
+        _chapter= 1;
+        _verse=2;
+    }
+    
+
 
     public string GetDisplayText()
     {
-        return "";
+        return $"{_book} {_chapter} : {_verse}";
     }
 
     
