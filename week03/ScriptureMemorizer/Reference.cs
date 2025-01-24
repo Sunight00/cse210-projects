@@ -5,5 +5,12 @@ public class Reference
     private int _verse;
     private int _endVerse;
 
+ 
+
+    public string GetDisplayText()
+    {
+        return "";
+    }
+
     
 }

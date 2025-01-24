@@ -1,12 +1,13 @@
 public class Scripture
 {
     Reference newReference = new Reference();
-    private List<string> _words;    
 
+    private List<Word> _words = new List<Word>();    
 
 
     public void HideRandomWords(int numberToHide)
     {
+        
 
     }
 
