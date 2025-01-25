@@ -5,12 +5,12 @@ public class Scripture
     
     private List<Word> _words = new List<Word>();
         
-    Word Text = new Word();
 
 
+
     
     
-    
+    public class Scripture( )
 
 
     public void HideWords()
