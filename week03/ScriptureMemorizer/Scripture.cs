@@ -10,7 +10,10 @@ public class Scripture
 
     
     
-    public class Scripture( )
+    public Scripture( )
+    {
+
+    }
 
 
     public void HideWords()
