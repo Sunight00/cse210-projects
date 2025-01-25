@@ -4,7 +4,7 @@ public class Scripture
     
     
     private List<Word> _words = new List<Word>();
-    public List<string> word = new List<string>();
+    public List<string> words = new List<string>();
         
 
 
@@ -13,15 +13,25 @@ public class Scripture
     
     public Scripture( )
     {   
-        word=["And","God","said","let","there","be","light:","and","there","was","light."];        
+        newReference.SetOneVerse("Gensis",1,3);
+        newReference.GetDisplayText();
+        words=["And","God","said","let","there","be","light:","and","there","was","light."];        
     }
 
 
     public void HideWords()
-    {
+    {   int len = words.Count();
+        
+        Random ranhide = new Random();
+        int fig = ranhide.Next(len);
 
-        string v = "ffff";
-        string abc = new string('_', v.Length);
+
+        string hide = words[fig];
+
+        string underscore = new string('_', hide.Length);
+
+        words[fig]=underscore;
+          
     }
 
 
@@ -33,9 +43,9 @@ public class Scripture
 
     public string GetDisplayText()
     {
-        
-        var result = string.Join(" ", word);
-       return result;
+
+        var result = string.Join(" ", words);
+       return $"{newReference.GetDisplayText()} {result}";
     }
 
 
