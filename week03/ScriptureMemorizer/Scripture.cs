@@ -5,20 +5,29 @@ public class Scripture
     
     public List<Word> _words = new List<Word>();
         
+    Word Text = new Word();
 
 
+    
+    
+    
 
+
+    public void HideWords()
+    {
+
+    }
 
 
     public void HideRandomWords(int numberToHide)
     {
-        
 
     }
 
+
     public string GetDisplayText()
     {
-        return "";
+       return "";
     }
 
 
