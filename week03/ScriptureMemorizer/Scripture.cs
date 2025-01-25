@@ -4,6 +4,7 @@ public class Scripture
     
     
     private List<Word> _words = new List<Word>();
+    public List<string> word = new List<string>();
         
 
 
@@ -11,14 +12,16 @@ public class Scripture
     
     
     public Scripture( )
-    {
-        
+    {   
+        word=["And","God","said","let","there","be","light:","and","there","was","light."];        
     }
 
 
     public void HideWords()
     {
 
+        string v = "ffff";
+        string abc = new string('_', v.Length);
     }
 
 
@@ -30,7 +33,9 @@ public class Scripture
 
     public string GetDisplayText()
     {
-       return "";
+        
+        var result = string.Join(" ", word);
+       return result;
     }
 
 
