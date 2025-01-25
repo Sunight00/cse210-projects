@@ -3,7 +3,8 @@ public class Scripture
     Reference newReference = new Reference();
     
     
-    public List<Word> _words = new List<Word>();    
+    public List<Word> _words = new List<Word>();
+        
 
 
 
@@ -21,9 +22,9 @@ public class Scripture
     }
 
 
-    public bool IsCompletelyHdden( bool d)
+    public bool IsCompletelyHdden()
     {
-        return d;
+        return false;
     }
 }
 

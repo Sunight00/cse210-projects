@@ -11,6 +11,10 @@ class Program
         Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
         Console.WriteLine(p.GetDisplayText());
 
+
+        Word hh = new Word();
+        Console.WriteLine(hh.SetWord("And God said, Let there be light: and there was light."));
+
         
     }
 }

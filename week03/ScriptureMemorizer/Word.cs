@@ -1,6 +1,13 @@
 public class Word
 {
     private string _text;
+
+
+    public string SetWord(string text)
+    {   
+        _text=text;
+        return _text;
+    }
     
 
     public void Hide()
