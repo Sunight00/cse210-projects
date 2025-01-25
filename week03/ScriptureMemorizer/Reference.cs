@@ -5,18 +5,25 @@ public class Reference
     private int _verse;
     private int _endVerse;
 
-    public Reference()
+    public void SetOneVerse(string book, int chapter, int verse)
     {
-        _book="Genesis";
-        _chapter= 1;
-        _verse=2;
+        _book=book;
+        _chapter=chapter;
+        _verse=verse;
+    }
+
+    public void SetMultiVerse(string book, int chapter, int verse, int endverse)
+    {
+        _book=book;
+        _chapter=chapter;
+        _verse=verse;
+        _endVerse=endverse;
     }
     
 
-
     public string GetDisplayText()
     {
-        return $"{_book} {_chapter} : {_verse}";
+        return $"{_book} {_chapter}:{_verse}";
     }
 
     
