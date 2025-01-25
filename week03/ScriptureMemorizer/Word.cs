@@ -7,13 +7,6 @@ public class Word
     {
         _text = "And God said, Let there be light: and there was light.";
     }
-
-
-    public string SetWord(string text)
-    {   
-        _text=text;
-        return _text;
-    }
     
 
     public void Hide()
