@@ -22,8 +22,14 @@ public class Word
 
     public bool IsHidden()
     {
+        string underscore = new string('_', _text.Length);
+        
+        if (_text == underscore )
+        {
+
+        }
         // Implement the logic to determine if the word is hidden
-        return false; // Placeholder return value
+        return true; // Placeholder return value
     }
 
     public string GetDisplayText()

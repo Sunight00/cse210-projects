@@ -21,6 +21,7 @@ class Program
         //open = false;
         Word n = new Word();
         n.Hide();
+        Console.WriteLine(n.IsHidden());
         Console.WriteLine(n.GetDisplayText());
         
          
