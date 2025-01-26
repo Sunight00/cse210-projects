@@ -17,7 +17,7 @@ public class Word
 
     public void Show()
     {
-
+        string show = new string(_text);
     }
 
     public bool IsHidden()
