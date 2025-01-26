@@ -1,11 +1,13 @@
 public class Word
 {
     private string _text;
+    private bool _isHidden;
 
 
-    public  Word()
+   public Word(string text)
     {
-        _text = "Prayer";
+        _text = text;
+        _isHidden = false;
     }
     
 
