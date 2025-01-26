@@ -3,56 +3,30 @@ public class Word
     private string _text;
     private bool _isHidden;
 
-
-   public Word(string text)
+    public Word(string text)
     {
         _text = text;
         _isHidden = false;
     }
-    
 
     public void Hide()
     {
-        _text= new string('_',_text.Length);
+        _isHidden = true;
     }
-
 
     public void Show()
     {
-        string show = new string(_text);
-        Console.WriteLine(show);
+        _isHidden = false;
     }
 
     public bool IsHidden()
     {
-        string underscore = new string('_', _text.Length);
-        
-        if (_text == underscore )
-        {
-
-        }
-        // Implement the logic to determine if the word is hidden
-        return true; // Placeholder return value
+         // Implement the logic to determine if the word is hidden
+        return _isHidden; // Placeholder return value
     }
 
     public string GetDisplayText()
     {
-        return _text;
+        return _isHidden ? new string('_', _text.Length) : _text;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
