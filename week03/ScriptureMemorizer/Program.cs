@@ -27,12 +27,12 @@ class Program
 
             if (input.ToLower() == "quit")
             {
-                Console.WriteLine("Goodbye!");
+                Console.WriteLine("Have a nice day.");
                 break;
             }
 
             // Hide random words
-            scripture.HideRandomWords(3); // Hide 3 random words at a time
+            scripture.HideRandomWords(2); 
             Console.Clear();
 
             // Display the updated scripture
@@ -42,7 +42,7 @@ class Program
             // Check if the scripture is completely hidden
             if (scripture.IsCompletelyHidden())
             {
-                Console.WriteLine("All words are hidden. Well done!");
+                Console.WriteLine("Hidden all words");
                 break;
             }
         }
