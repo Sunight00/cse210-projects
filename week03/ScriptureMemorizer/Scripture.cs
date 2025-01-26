@@ -1,55 +1,40 @@
 public class Scripture
 {
-    Reference newReference = new Reference();
-    
-    
-    private List<Word> _words = new List<Word>();
-    public List<string> words = new List<string>();
+    private Reference _reference;
+    private List<Word> _words;
+
+    public Scripture(Reference reference, string text)
+    {
+        _reference = reference;
+        _words = text.Split(' ').Select(word => new Word(word)).ToList();
         
-
-
-
-    
-    
-    public Scripture( )
-    {   
-        newReference.SetOneVerse("Gensis",1,3);
-        words=["And","God","said","let","there","be","light:","and","there","was","light."];        
     }
-
-    public void HideWords()
-    {   int len = words.Count();
-        
-        Random ranhide = new Random();
-        int fig = ranhide.Next(len);
-
-
-        string hide = words[fig];
-
-        string underscore = new string('_', hide.Length);
-
-        words[fig]=underscore;
-          
-    }
-
 
     public void HideRandomWords(int numberToHide)
     {
+        Random random = new Random();
+        int hiddenCount = 0;
 
+        while (hiddenCount < numberToHide)
+        {
+            var word = _words[random.Next(_words.Count)];
+            if (!word.IsHidden())
+            {
+                word.Hide();
+                hiddenCount++;
+            }
+        }
     }
-
 
     public string GetDisplayText()
     {
-
-        var result = string.Join(" ", words);
-       return $"{newReference.GetDisplayText()} {result}";
+        string referenceText = _reference.GetDisplayText();
+        string scriptureText = string.Join(" ", _words.Select(word => word.GetDisplayText()));
+        return $"{referenceText} {scriptureText}";
     }
 
-
-    public bool IsCompletelyHdden()
+    public bool IsCompletelyHidden()
     {
-        return false;
+        return _words.All(word => word.IsHidden());
     }
 }
-
