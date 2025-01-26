@@ -5,14 +5,14 @@ public class Reference
     private int _verse;
     private int _endVerse;
 
-    public void SetOneVerse(string book, int chapter, int verse)
+    public  Reference(string book, int chapter, int verse)
     {
         _book=book;
         _chapter=chapter;
         _verse=verse;
     }
 
-    public void SetMultiVerse(string book, int chapter, int verse, int endverse)
+    public  Reference(string book, int chapter, int verse, int endverse)
     {
         _book=book;
         _chapter=chapter;
