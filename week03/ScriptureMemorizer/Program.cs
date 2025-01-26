@@ -14,7 +14,7 @@ class Program
         Scripture scripture = new Scripture(reference, scriptureText);
 
         Console.Clear();
-        Console.WriteLine("Memorization Helper");
+        Console.WriteLine("Scripture Memorizer");
         Console.WriteLine("====================");
         Console.WriteLine(scripture.GetDisplayText());
         Console.WriteLine();
