@@ -4,9 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        
-        while (true)
-        {   Console.WriteLine("Type in quit to stop program");
+        bool open = true;
+        while (open)
+        {   
             string response = Console.ReadLine();
             if (response !="quit")
             {
@@ -17,7 +17,8 @@ class Program
                 Console.WriteLine(n.GetDisplayText());
             }
         }
-        //string response = Console.Readline();
+        open = false;
+        
          
         
 
