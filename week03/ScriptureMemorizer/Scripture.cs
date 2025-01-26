@@ -18,7 +18,6 @@ public class Scripture
         words=["And","God","said","let","there","be","light:","and","there","was","light."];        
     }
 
-
     public void HideWords()
     {   int len = words.Count();
         
