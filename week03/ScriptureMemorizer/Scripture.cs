@@ -14,7 +14,6 @@ public class Scripture
     public Scripture( )
     {   
         newReference.SetOneVerse("Gensis",1,3);
-        newReference.GetDisplayText();
         words=["And","God","said","let","there","be","light:","and","there","was","light."];        
     }
 

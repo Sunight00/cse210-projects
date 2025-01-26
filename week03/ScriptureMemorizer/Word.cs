@@ -5,13 +5,13 @@ public class Word
 
     public  Word()
     {
-        _text = "And God said, Let there be light: and there was light.";
+        _text = "Prayer";
     }
     
 
     public void Hide()
     {
-        
+        _text= new string('_',_text.Length);
     }
 
 
