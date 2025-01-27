@@ -7,9 +7,7 @@ public class Video
 
     public Video()
     {
-        Comment n = new Comment();
         
-        _comments.Add(n._text);
     }
 
     public int TotalComments()
