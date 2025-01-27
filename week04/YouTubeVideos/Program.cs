@@ -12,6 +12,10 @@ class Program
 
         List<string> commentorName = ["henry","Effy"];
         List<string> comments = ["wow what's that poduct","incredicle what's this brand"];
+
+
+        Dictionary<int,string> youTube = new Dictionary<int, string>();
+        
         
         int vid = 0;
         while ( vid !=4)
