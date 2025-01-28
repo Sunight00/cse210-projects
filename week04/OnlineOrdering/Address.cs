@@ -8,6 +8,9 @@ public class Address
     public Address()
     {
         _country="USA";
+        _city="Henny";
+        _state="dWWW";
+        _street="dddd";
     }
 
     public bool IsUsa()

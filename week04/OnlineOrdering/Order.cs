@@ -8,9 +8,10 @@ public class Order
 
     public Order()
     {
-        Product p1 = new Product(); 
-         _products.Add(p1);
-        Product p2 = new Product();
+        Product p1 = new Product("a","d",1,1); 
+        _products.Add(p1);
+
+        Product p2 = new Product("a","d",1,1);
         _products.Add(p2);
        
     }
@@ -29,7 +30,13 @@ public class Order
 
 
     public double CalculateTotalOrder()
-    {
-        return 0;
+    {    double n = 0;
+        foreach (Product sum in _products)
+        {
+           
+            n +=sum.Total();
+        }
+        return n;
+        
     }
 }
