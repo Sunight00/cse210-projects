@@ -25,4 +25,9 @@ public class Address
         }
     }
 
+    public string address()
+    {
+        return $"{_street} {_city} {_state} {_country}";
+    }
+
 }

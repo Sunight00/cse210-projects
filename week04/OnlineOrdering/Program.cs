@@ -5,9 +5,12 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
-        Product firstProduct = new Product("USA", "exampleDescription", 1, 2);
-        Product SecondProduct = new Product("USA", "exampleDescription", 1, 2);
-        Product ThirdProduct = new Product("USA", "exampleDescription", 1, 2);
+        Address lo = new Address("d","d","d","USA");
+        Product firstProduct = new Product("shoe", "exampleDescription", 1, 2);
+        Product SecondProduct = new Product("broom", "exampleDescription", 1, 2);
+        Product ThirdProduct = new Product("pen", "exampleDescription", 1, 2);
+
+        Console.WriteLine(lo.InUsa());
 
         Order n = new Order(firstProduct,SecondProduct,ThirdProduct);
       
