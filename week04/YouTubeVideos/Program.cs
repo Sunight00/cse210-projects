@@ -39,7 +39,7 @@ class Program
         foreach(var vid in youtube)
         {
             vid.Display();
-            Console.WriteLine();;kkk
+            Console.WriteLine();
         }
        
        
