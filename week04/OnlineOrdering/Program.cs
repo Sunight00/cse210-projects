@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
-        Address lo = new Address("d","d","d","USA");
+        Address lo = new Address("d","d","d","US");
         Product firstProduct = new Product("shoe", "exampleDescription", 1, 2);
         Product SecondProduct = new Product("broom", "exampleDescription", 1, 2);
         Product ThirdProduct = new Product("pen", "exampleDescription", 1, 2);

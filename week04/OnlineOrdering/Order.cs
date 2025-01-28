@@ -1,7 +1,7 @@
 public class Order
 {
     private List<Product> _products = new List<Product>();
-    //private string _customer;
+    private Customer _customer;
 
 
     public Order (Product q,Product w,Product e)
@@ -9,8 +9,10 @@ public class Order
         _products.Add(q);
         _products.Add(w);
         _products.Add(e);
-
     }
+
+
+
 
     /*public void ha()
     {

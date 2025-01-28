@@ -9,6 +9,7 @@ public class Customer
         _address=address;
     }
     
+    
     public bool CheckUSA()
     {   
         return _address.InUsa();
