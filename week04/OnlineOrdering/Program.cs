@@ -5,9 +5,19 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
-        Product name = new Product("q","q",2,3);
-        Product q = new Product("q","q",2,3);
+        Product firstProduct = new Product("exampleName", "exampleDescription", 1, 2);
+        Product SecondProduct = new Product("exampleName", "exampleDescription", 1, 2);
+        Product ThirdProduct = new Product("exampleName", "exampleDescription", 1, 2);
 
-        Console.WriteLine(name.TotalCost());
+        Order n = new Order(firstProduct,SecondProduct,ThirdProduct);
+      
+        // Assuming _firstProduct is a property or field, you can assign a value to it
+                n.ha();
+              
+        
+     
+
+        Console.WriteLine();
+
     }
 }

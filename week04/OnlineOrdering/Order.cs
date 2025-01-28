@@ -1,14 +1,31 @@
 public class Order
 {
-    private List<Product> _product = new List<Product>();
-    private string _customer;
+    private List<Product> _products = new List<Product>();
+    //private string _customer;
 
-    public Product sum;
+    public Product _firstProduct;
+
+    public Order (Product q,Product w,Product e)
+    {
+        _products.Add(q);
+        _products.Add(w);
+        _products.Add(e);
+
+    }
+
+    public void ha()
+    {
+        foreach(Product n in _products)
+        {
+            Console.WriteLine(n.TotalCost());
+        }
+    }
+
 
 
     public double TotalOrder()
-    {
-        return 0;
+    {   
+        return 1;
     }
 
     public string PackingLabel()
