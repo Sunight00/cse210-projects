@@ -2,6 +2,7 @@ public class Order
 {
     private List<string> _products = new List<string>();
     private string _customer;
+    private string _address;
 
     public Order()
     {
