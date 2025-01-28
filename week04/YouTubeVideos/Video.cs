@@ -23,9 +23,11 @@ public class Video
         return comments;
     }
 
+    
+
 
     public void Display()
-    {
-        Console.WriteLine($"Title: {_title}, Author: {_author}, Duration: {_length}, Total Comment: {TotalComments()}");
+    {   
+        Console.WriteLine($"Title: {_title}, Author: {_author}, Duration: {_length}, Total Comment: {TotalComments()} ");
     }    
 }

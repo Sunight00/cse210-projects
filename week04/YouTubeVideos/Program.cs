@@ -17,6 +17,7 @@ class Program
         Comment vidOne = new Comment();
         vidOne._name=["Andrew","fred","Joshua","John"];
         vidOne._text=["Aweosome","Great","Nice brand","Wow how can i get that!"];
+       
         
 
 
@@ -25,19 +26,22 @@ class Program
 
 
         youtube.Add(vid2);
+        vid2._comments=["Aweosome","Great","Nice brand","Wow how can i get that!"];
+        Comment vidtwo = new Comment();
+        vidtwo._name=["Andrew","fred","Joshua","John"];
+        vidtwo._text=["Aweosome","Great","Nice brand","Wow how can i get that!"];
+
         //youtube.Add(vid3);
         //youtube.Add(vid4);
         
 
 
-
-
-
         foreach(var vid in youtube)
         {
             vid.Display();
-             vidOne.displayComment();
+            Console.WriteLine();;kkk
         }
+       
        
     }
 }
