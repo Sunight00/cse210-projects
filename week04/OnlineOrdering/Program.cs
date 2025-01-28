@@ -10,7 +10,7 @@ class Program
         Product SecondProduct = new Product("broom", "exampleDescription", 1, 2);
         Product ThirdProduct = new Product("pen", "exampleDescription", 1, 2);
 
-        Console.WriteLine(lo.InUsa());
+        //Console.WriteLine(lo.InUsa());
 
         Order n = new Order(firstProduct,SecondProduct,ThirdProduct);
       
@@ -19,7 +19,9 @@ class Program
                 
 
               
-        
+        Customer add = new Customer("aaaa",lo);
+        add.CheckUSA();
+        Console.WriteLine(add.CheckUSA());
      
 
         Console.WriteLine(n.TotalOrder());
