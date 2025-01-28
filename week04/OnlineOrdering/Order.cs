@@ -24,8 +24,12 @@ public class Order
 
 
     public double TotalOrder()
-    {   
-        return 1;
+    {   double sum = 0;
+        foreach(Product n in _products)
+        {
+            sum+=n.TotalCost();
+        }
+        return sum;
     }
 
     public string PackingLabel()

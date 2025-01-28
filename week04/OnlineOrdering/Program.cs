@@ -12,12 +12,14 @@ class Program
         Order n = new Order(firstProduct,SecondProduct,ThirdProduct);
       
         // Assuming _firstProduct is a property or field, you can assign a value to it
-                n.ha();
+                //n.ha();
+                
+
               
         
      
 
-        Console.WriteLine();
+        Console.WriteLine(n.TotalOrder());
 
     }
 }
