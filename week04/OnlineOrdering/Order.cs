@@ -12,6 +12,17 @@ public class Order
 
 
 
+    public string PackingLabel()
+    {
+        return "";
+    }
+
+     public string ShippingLabel()
+    {
+        return "";
+    }
+
+
 
 
 
