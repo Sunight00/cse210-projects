@@ -2,11 +2,18 @@ using System.Net.Http.Headers;
 
 public class Order
 {
-    private List<string> _products = new List<string>();
+    private List<Product> _products = new List<Product>();
     private string _customer;
     private string _address;
 
-    public Product prod = new Product();
+    public Order()
+    {
+        Product p1 = new Product(); 
+         _products.Add(p1);
+        Product p2 = new Product();
+        _products.Add(p2);
+       
+    }
 
 
     public string PackingLabel()
