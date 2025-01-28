@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.InteropServices;
 
 class Program
 {
@@ -18,18 +19,11 @@ class Program
         vidOne._name=["Andrew","fred","Joshua","John"];
         vidOne._text=["Aweosome","Great","Nice brand","Wow how can i get that!"];
        
-        
-
-
-
-
-
-
         youtube.Add(vid2);
-        vid2._comments=["Aweosome","Great","Nice brand","Wow how can i get that!"];
+        vid2._comments=["Aweosome","Great","Nice brand"];
         Comment vidtwo = new Comment();
-        vidtwo._name=["Andrew","fred","Joshua","John"];
-        vidtwo._text=["Aweosome","Great","Nice brand","Wow how can i get that!"];
+        vidtwo._name=["Andrew","fred","Joshua"];
+        vidtwo._text=["Aweosome","Great","Nice brand"];
 
         //youtube.Add(vid3);
         //youtube.Add(vid4);
@@ -41,6 +35,14 @@ class Program
             vid.Display();
             Console.WriteLine();
         }
+
+        Console.WriteLine("Video One Comments");
+        vidOne.displayComment();
+        Console.WriteLine();
+
+        Console.WriteLine("Video Two Comments");
+        vidtwo.displayComment();
+
        
        
     }
