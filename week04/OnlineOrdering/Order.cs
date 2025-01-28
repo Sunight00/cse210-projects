@@ -2,6 +2,7 @@ public class Order
 {
     private List<Product> _products = new List<Product>();
     public Customer _customer;
+  
 
 
     public Order (Product q,Product w,Product e)
@@ -9,6 +10,10 @@ public class Order
         _products.Add(q);
         _products.Add(w);
         _products.Add(e);
+    }
+    public Order (string a, Address d)
+    {
+        _customer=new Customer(a,d);
     }
 
 
@@ -31,13 +36,14 @@ public class Order
         {
             sum+=n.TotalCost();
         }
-        if (_customer.CheckUSA() == true)
+        //return sum;
+        if (_customer.CheckUSA() ==  true)
         {
-             return sum +3;
+            return sum+=5;
         }
         else
         {
-            return sum;
+            return sum+=35;
         }
        
     }
