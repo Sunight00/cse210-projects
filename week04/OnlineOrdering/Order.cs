@@ -3,7 +3,6 @@ public class Order
     private List<Product> _products = new List<Product>();
     //private string _customer;
 
-    public Product _firstProduct;
 
     public Order (Product q,Product w,Product e)
     {
