@@ -13,13 +13,13 @@ public class Order
 
     }
 
-    public void ha()
+    /*public void ha()
     {
         foreach(Product n in _products)
         {
             Console.WriteLine(n.TotalCost());
         }
-    }
+    }*/
 
 
 

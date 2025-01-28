@@ -5,9 +5,9 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
-        Product firstProduct = new Product("exampleName", "exampleDescription", 1, 2);
-        Product SecondProduct = new Product("exampleName", "exampleDescription", 1, 2);
-        Product ThirdProduct = new Product("exampleName", "exampleDescription", 1, 2);
+        Product firstProduct = new Product("USA", "exampleDescription", 1, 2);
+        Product SecondProduct = new Product("USA", "exampleDescription", 1, 2);
+        Product ThirdProduct = new Product("USA", "exampleDescription", 1, 2);
 
         Order n = new Order(firstProduct,SecondProduct,ThirdProduct);
       
