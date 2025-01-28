@@ -18,9 +18,10 @@ class Program
         youtube.Add(vid4);
 
 
+
         foreach(var vid in youtube)
         {
-            
+            vid.Display();
         }
     }
 }

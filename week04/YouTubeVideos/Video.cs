@@ -5,6 +5,11 @@ public class Video
     public double _length;
     public List<string> _comments = new List<string>();
 
+    public Video()
+    {
+        
+    }
+
     public Video(string setTitle, string setAuthor, double setLength)
     {
         _title=setTitle;
@@ -18,8 +23,9 @@ public class Video
         return comments;
     }
 
-    public void display()
+
+    public void Display()
     {
-        Console.WriteLine(_title,_author,_length);
+        Console.WriteLine($"{_title} {_author} {_length}");
     }    
 }
