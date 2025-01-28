@@ -7,7 +7,7 @@ public class Product
 
     public Product ()
     {
-        
+
     }
     public Product(string name, string id, double price, double qty)
     {

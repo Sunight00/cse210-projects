@@ -6,13 +6,14 @@ public class Order
     private string _customer;
     private string _address;
 
+    public Product prod = new Product();
+    
+  
+
+
     public Order()
     {
-        Product p1 = new Product("a","d",1,1); 
-        _products.Add(p1);
 
-        Product p2 = new Product("a","d",1,1);
-        _products.Add(p2);
        
     }
 
@@ -29,14 +30,14 @@ public class Order
 
 
 
-    public double CalculateTotalOrder()
-    {    double n = 0;
+    public void CalculateTotalOrder()
+    {   
         foreach (Product sum in _products)
         {
-           
-            n +=sum.Total();
+           Console.WriteLine($"{sum.Total()} jj");
+             
         }
-        return n;
         
+       
     }
 }
