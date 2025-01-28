@@ -4,12 +4,6 @@ public class Order
     private string _customer;
     private string _address;
 
-    public Order()
-    {
-        _customer = "Jerry";
-        _products=["Liquid Detergent","Broom","Bust Pan"];
-
-    }
 
 
 
@@ -25,10 +19,8 @@ public class Order
 
 
 
-
-
-    public void CalculateTotalOrder()
+    public double CalculateTotalOrder()
     {
-
+        return 0;
     }
 }

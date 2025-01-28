@@ -5,6 +5,11 @@ public class Address
     private string _state;
     private string _country;
 
+    public Address()
+    {
+        _country="USA";
+    }
+
     public bool IsUsa()
     {
         if (_country == "USA")
