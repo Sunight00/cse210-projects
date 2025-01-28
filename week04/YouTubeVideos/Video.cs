@@ -16,5 +16,10 @@ public class Video
     {
         int comments = _comments.Count;
         return comments;
+    }
+
+    public void display()
+    {
+        Console.WriteLine(_title,_author,_length);
     }    
 }
