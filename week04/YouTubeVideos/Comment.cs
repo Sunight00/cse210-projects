@@ -1,20 +1,18 @@
 public class Comment
 {
-    public string _name;
-    public string _text;
+    public List<string> _name = new List<string>();
+    public List<string> _text = new List<string>();
 
 
-    public Comment(string name, string feedBack)
+    public void displayComment()
     {
-       _name=name;
-       _text=feedBack;
+        for (int i = 0; i < _name.Count; i++)
+            {string name = _name[i];
+            string comment = _text[i];
+            Console.WriteLine($"{name}: {comment}");}
+        }
     }
+            
+    
 
-    public void addComment()
-    {
-        Video list = new Video();
-        list._comments.Add($"{_name}: {_text}");
-    }
-
-}
 

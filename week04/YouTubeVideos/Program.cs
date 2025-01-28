@@ -13,15 +13,31 @@ class Program
         
         List<Video> youtube = new List<Video>();
         youtube.Add(vid1);
+        vid1._comments=["Aweosome","Great","Nice brand","Wow how can i get that!"];
+        Comment vidOne = new Comment();
+        vidOne._name=["Andrew","fred","Joshua","John"];
+        vidOne._text=["Aweosome","Great","Nice brand","Wow how can i get that!"];
+        
+
+
+
+
+
+
         youtube.Add(vid2);
-        youtube.Add(vid3);
-        youtube.Add(vid4);
+        //youtube.Add(vid3);
+        //youtube.Add(vid4);
+        
+
+
 
 
 
         foreach(var vid in youtube)
         {
             vid.Display();
+             vidOne.displayComment();
         }
+       
     }
 }

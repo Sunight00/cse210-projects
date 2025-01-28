@@ -26,6 +26,6 @@ public class Video
 
     public void Display()
     {
-        Console.WriteLine($"{_title} {_author} {_length}");
+        Console.WriteLine($"Title: {_title}, Author: {_author}, Duration: {_length}, Total Comment: {TotalComments()}");
     }    
 }
