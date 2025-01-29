@@ -29,7 +29,5 @@ class Program
 
         Console.WriteLine(cus.shippingCost()+n.TotalOrder());
         
-        
-
     }
 }

@@ -16,9 +16,6 @@ public class Order
         _customer=new Customer(a,d);
     }
 
-
-
-
     /*public void ha()
     {
         foreach(Product n in _products)
@@ -28,7 +25,7 @@ public class Order
     }*/
 
 
-
+    //for suming the total of a list
     public double TotalOrder()
     {   
         double sum = 0;
@@ -47,6 +44,7 @@ public class Order
         }*/ 
     }
 
+    //for determinig shipping cost
     public double shippingCost()
     {   
         double sum=0;
