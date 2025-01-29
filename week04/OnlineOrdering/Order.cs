@@ -86,8 +86,7 @@ public class Order
 
     public void ShippingLabel()
     {
-       Console.WriteLine($"{_customer.name()},{_address.address()}" );
-       
+       Console.WriteLine($"{_customer.name()}: Address:- {_address.address()}" );
     }
 
 

@@ -21,21 +21,19 @@ class Program
                 //n.ha();
                 
         
-              
         //Customer add = new Customer("Fred Jackson",address);
         //Console.Write(add.name());
         //add.CheckUSA();
         //Console.WriteLine(cus._customer.CheckUSA());
      
-        Console.WriteLine(order.TotalOrder());
-
-        Console.WriteLine(cus.shippingCost()+order.TotalOrder());
+       
         //n.PackingLabel();
         //n.ShippingLabel();
+        //Console.WriteLine(order.TotalOrder());
         order.PackingLabel();
+        Console.WriteLine($"Total: ${cus.shippingCost()+order.TotalOrder()}");
         cus.ShippingLabel();
 
-        
-
+    
     }
 }
