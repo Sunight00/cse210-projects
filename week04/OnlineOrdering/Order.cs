@@ -25,7 +25,7 @@ public class Order
     }*/
 
 
-    //for suming the total of a list
+    //for suming the total of a order
     public double TotalOrder()
     {   
         double sum = 0;
@@ -61,9 +61,12 @@ public class Order
 
 
 
-    public string PackingLabel()
-    {
-        return "your purchase";
+    public void PackingLabel()
+    {   
+        for (int i=0; i<_products.Count(); i++)
+        {
+            Console.WriteLine( _products[i]);
+        }
     }
 
     public string ShippingLabel()
