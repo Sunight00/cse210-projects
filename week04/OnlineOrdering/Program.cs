@@ -4,8 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
-        Address address = new Address("132 My Street","d","d","US");
+        Address address = new Address("132 My Street","blah","blah","US");
         Product firstProduct = new Product("shoe", "1122", 1, 2);
         Product SecondProduct = new Product("broom", "5266", 1, 2);
         Product ThirdProduct = new Product("pen", "1223", 1, 2);
