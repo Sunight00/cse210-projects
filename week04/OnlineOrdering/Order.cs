@@ -17,15 +17,6 @@ public class Order
         _address= d;
     }
 
-    //public Order ()
-
-
-
-
-
-
-    //public Order ( )
-
     /*public void ha()
     {
         foreach(Product n in _products)
@@ -33,7 +24,6 @@ public class Order
             Console.WriteLine(n.TotalCost());
         }
     }*/
-
 
     //for suming the total of a order
     public double TotalOrder()
@@ -67,9 +57,6 @@ public class Order
             return sum+=35;
         }
     }
-
-
-
 
     public void PackingLabel()
     {   
