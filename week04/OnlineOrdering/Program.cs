@@ -28,8 +28,8 @@ class Program
         Console.WriteLine(n.TotalOrder());
 
         Console.WriteLine(cus.shippingCost()+n.TotalOrder());
-        n.PackingLabel();g
-        
+        n.PackingLabel();
+        n.ShippingLabel("j",lo);
         
     }
 }

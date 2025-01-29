@@ -63,15 +63,21 @@ public class Order
 
     public void PackingLabel()
     {   
+        foreach(Product n in _products)
+        {
+            Console.WriteLine(n);
+        }
+        /*
         for (int i=0; i<_products.Count(); i++)
         {
             Console.WriteLine( _products[i]);
-        }
+        }*/
     }
 
-    public string ShippingLabel()
+    public void ShippingLabel(string name, Address address)
     {
-        return "your delivery";
+        Console.WriteLine($"{name} : {address}");
+       
     }
 
 
