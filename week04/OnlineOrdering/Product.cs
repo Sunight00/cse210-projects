@@ -20,7 +20,7 @@ public class Product
 
     public String Display()
     {
-        return $"{_productName},{_productId},{_productQty},{_priceProduct}";
+        return $"{_productName} : {_productId}";
     }
 
 }

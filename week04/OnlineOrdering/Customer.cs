@@ -1,3 +1,5 @@
+using System.Text;
+
 public class Customer
 {
     private string _name;
@@ -13,5 +15,10 @@ public class Customer
     public bool CheckUSA()
     {   
         return _address.InUsa();
+    }
+
+    public string name()
+    {
+        return _name;
     }
 }

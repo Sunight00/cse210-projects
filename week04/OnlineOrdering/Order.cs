@@ -1,7 +1,7 @@
 public class Order
 {
     private List<Product> _products = new List<Product>();
-    public Customer _customer;
+    private Customer _customer;
     public Address _address;
 
 
@@ -14,7 +14,17 @@ public class Order
     public Order (string a, Address d)
     {
         _customer=new Customer(a,d);
+        _address= d;
     }
+
+    //public Order ()
+
+
+
+
+
+
+    //public Order ( )
 
     /*public void ha()
     {
@@ -76,7 +86,7 @@ public class Order
 
     public void ShippingLabel()
     {
-       Console.WriteLine(_address.address());
+       Console.WriteLine($"{_customer.name()},{_address.address()}" );
        
     }
 
