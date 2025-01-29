@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
-        Address lo = new Address("d","d","d","UA");
+        Address lo = new Address("d","d","d","US");
         Product firstProduct = new Product("shoe", "exampleDescription", 1, 2);
         Product SecondProduct = new Product("broom", "exampleDescription", 1, 2);
         Product ThirdProduct = new Product("pen", "exampleDescription", 1, 2);
@@ -25,8 +25,11 @@ class Program
         //add.CheckUSA();
         //Console.WriteLine(cus._customer.CheckUSA());
      
+        Console.WriteLine(n.TotalOrder());
 
-        Console.WriteLine(cus.TotalOrder());
+        Console.WriteLine(cus.shippingCost()+n.TotalOrder());
+        
+        
 
     }
 }

@@ -34,10 +34,23 @@ public class Order
         double sum = 0;
         foreach(Product n in _products)
         {
-            sum+=n.TotalCost();
+            sum+=n.TotalCost();  
         }
-        //return sum;
-        if (_customer.CheckUSA() ==  true)
+        return sum;
+        /*if (_customer.CheckUSA() ==  true)
+        {
+            return sum+=5;
+        }
+        else
+        {
+            return sum+=35;
+        }*/ 
+    }
+
+    public double shippingCost()
+    {   
+        double sum=0;
+            if (_customer.CheckUSA() ==  true)
         {
             return sum+=5;
         }
@@ -45,8 +58,10 @@ public class Order
         {
             return sum+=35;
         }
-       
     }
+
+
+
 
     public string PackingLabel()
     {
