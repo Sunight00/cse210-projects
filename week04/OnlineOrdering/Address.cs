@@ -13,6 +13,14 @@ public class Address
         _country=country;
     }
 
+    public void SetAddress(string street,string city, string state, string country)
+    {
+        _street=street;
+        _city=city;
+        _state=state;
+        _country=country;
+    }
+
     public bool InUsa()
     {
         if(_country == "USA")

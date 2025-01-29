@@ -2,7 +2,7 @@ public class Order
 {
     private List<Product> _products = new List<Product>();
     public Customer _customer;
-  
+    public Address _address;
 
 
     public Order (Product q,Product w,Product e)
@@ -65,7 +65,7 @@ public class Order
     {   
         foreach(Product n in _products)
         {
-            Console.WriteLine(n);
+            Console.WriteLine(n.Display());
         }
         /*
         for (int i=0; i<_products.Count(); i++)
@@ -74,9 +74,9 @@ public class Order
         }*/
     }
 
-    public void ShippingLabel(string name, Address address)
+    public void ShippingLabel()
     {
-        Console.WriteLine($"{name} : {address}");
+       Console.WriteLine(_address.address());
        
     }
 

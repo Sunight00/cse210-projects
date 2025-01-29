@@ -18,4 +18,9 @@ public class Product
         return _productQty*_priceProduct;
     }
 
+    public String Display()
+    {
+        return $"{_productName},{_productId},{_productQty},{_priceProduct}";
+    }
+
 }
