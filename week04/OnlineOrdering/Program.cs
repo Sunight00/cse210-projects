@@ -34,6 +34,6 @@ class Program
         Console.WriteLine($"Total: ${cus.shippingCost()+order.TotalOrder()}");
         cus.ShippingLabel();
 
-    
+    /* This Program was completed with a lot of trial and error and correction. If i'm to try it again i believe it would still take me some time*/
     }
 }
