@@ -75,9 +75,4 @@ public class Order
     {
        Console.WriteLine($"{_customer.name()}: Address:- {_address.address()}" );
     }
-
-
-
-
-
 }
