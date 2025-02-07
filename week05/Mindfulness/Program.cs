@@ -21,13 +21,24 @@ class Program
             {
                 string name = "Breathing Activity";
                 string description = "This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
-                Console.Write("Time duration for your activitycin seconds: ");
+                Console.WriteLine();
+                Console.Write("Time duration for your activity in seconds: ");
                 string du = Console.ReadLine();
                 Console.WriteLine();
                 int duration = int.Parse(du);
 
                 Activity activity = new Activity(name,description,duration);
                 activity.DisplayStartingMessage();
+
+                Console.Clear();
+                Console.Write("Loading...");
+                Console.Write("\b \b");
+                
+
+                Thread.Sleep(10000);
+
+                 // Erase the + character
+                Console.Write("-");
                 activity.DisplayEndingMessage();
                 
             }
