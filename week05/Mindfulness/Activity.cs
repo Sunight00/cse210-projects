@@ -18,7 +18,7 @@ namespace sport
         }
         public void DisplayStartingMessage()
         {
-
+            Console.WriteLine($"{_name}: {_description}. Time: {_duration}");
         }
         public void DisplayEndingMessage()
         {
