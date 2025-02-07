@@ -22,7 +22,7 @@ namespace sport
         }
         public void DisplayEndingMessage()
         {
-
+            Console.WriteLine("Congrats you've done a good job.");
         }
         public void ShowSpinner(int seconds)
         {
