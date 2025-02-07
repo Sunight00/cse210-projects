@@ -14,7 +14,7 @@ class Program
             Console.WriteLine("1. Breath Activity.");
             Console.WriteLine("2. LIsting Activity");
             Console.WriteLine("3. Reflecting Activuty.");
-            Console.Write("Choose ACtivity: ");
+            Console.Write("Choose Activity: ");
             string option =Console.ReadLine();
 
             if (option == "1")
@@ -26,7 +26,7 @@ class Program
                 int duration = int.Parse(du);
 
                 Activity activity = new Activity(name,description,duration);
-                activity.DisplayEndingMessage();
+                activity.DisplayStartingMessage();
                 
             }
        } 
