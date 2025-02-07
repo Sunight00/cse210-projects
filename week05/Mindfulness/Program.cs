@@ -28,7 +28,7 @@ class Program
 
                 Activity activity = new Activity(name,description,duration);
                 activity.DisplayStartingMessage();
-                activity.DisplayEndingMessage()
+                activity.DisplayEndingMessage();
                 
             }
        } 
