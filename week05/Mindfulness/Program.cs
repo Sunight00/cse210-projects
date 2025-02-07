@@ -26,6 +26,7 @@ class Program
                 int duration = int.Parse(du);
 
                 Activity activity = new Activity(name,description,duration);
+                activity.DisplayEndingMessage();
                 
             }
        } 
