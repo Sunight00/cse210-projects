@@ -1,9 +1,15 @@
 using System;
 
-class Program
+namespace math 
+{
+    class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the week 5 exercise.");
+        WritingAssignment assign =new  WritingAssignment("Alain","Subtraction","hahaha i tring dhhdh hdddd");
+
+        Console.WriteLine(assign.GetString());
+        Console.WriteLine($"{assign.GetWritingInformation()}");
     }
+}
 }
