@@ -5,6 +5,17 @@ namespace sport
         private string _name;
         private string _description;
         private int _duration;
+
+        public Activity(string name, string discription, int duration)
+        {
+            _name = name;
+            _description=discription;
+            _duration = duration;
+        }
+        public Activity()
+        {
+
+        }
         public void DisplayStartingMessage()
         {
 
