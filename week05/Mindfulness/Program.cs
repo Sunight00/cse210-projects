@@ -20,6 +20,11 @@ class Program
             if (option == "1")
             {
                 Console.WriteLine("Breathing Activity");
+                string name = "Breathing Activity";
+                string description = "This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
+                Console.Write("Duration of activity:");
+                Activity activity = new Activity();
+                
             }
        } 
       
