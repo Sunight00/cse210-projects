@@ -92,5 +92,10 @@ namespace activity
                 
             }
         }
+
+        public int GetDuration()
+        {
+            return _duration;
+        }
     }
 }

@@ -38,6 +38,10 @@ class Program
           
                 
                 activity.DisplayEndingMessage();
+
+                BreathingActivity breath = new BreathingActivity(name,description,duration);
+                breath.Run();
+                Console.WriteLine(activity.GetDuration());  
                 
             }
        } 
