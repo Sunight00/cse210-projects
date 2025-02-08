@@ -32,16 +32,18 @@ class Program
 
                 Console.Clear();
                 Console.WriteLine("Get ready....");
-                activity.ShowSpinner(1);
+                activity.ShowSpinner(5);
 
                 activity.ShowCountDown(duration);
-          
-                
-                activity.DisplayEndingMessage();
+
 
                 BreathingActivity breath = new BreathingActivity(name,description,duration);
                 breath.Run();
-                Console.WriteLine(activity.GetDuration());  
+                activity.ShowSpinner(3);
+                Console.Clear();
+                activity.DisplayEndingMessage();
+
+
                 
             }
        } 

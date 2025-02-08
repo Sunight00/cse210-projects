@@ -11,23 +11,21 @@ namespace activity
         public void Run()
         {
             DateTime n = DateTime.Now;
-            Console.WriteLine(n);
+            //Console.WriteLine(n);
             DateTime q = n.AddSeconds(GetDuration());
-            Console.WriteLine(q);
+            //Console.WriteLine(q);
             while (DateTime.Now<q)
             {
-                Console.Write($"Breath in...");
+                Console.Write($"Breathe in...");
                 ShowCountDown(0);
                 Console.WriteLine();
 
-                Console.Write($"Breath out...");
+                Console.Write($"Now Breathe out...");
                 ShowCountDown(0);
 
                 Console.WriteLine();
                 Console.WriteLine();
             }
- 
-
        
         }
     }
