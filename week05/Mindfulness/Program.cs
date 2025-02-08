@@ -34,14 +34,13 @@ class Program
                 Console.WriteLine("Get ready....");
                 activity.ShowSpinner(5);
 
-                activity.ShowCountDown(duration);
-
-
+                Console.WriteLine();
                 BreathingActivity breath = new BreathingActivity(name,description,duration);
                 breath.Run();
                 activity.ShowSpinner(3);
                 Console.Clear();
                 activity.DisplayEndingMessage();
+                Console.WriteLine();
 
 
                 
