@@ -1,3 +1,5 @@
+using System.IO.Compression;
+
 namespace activity
 {
     public class BreathingActivity : Activity
@@ -10,10 +12,21 @@ namespace activity
         {
             DateTime n = DateTime.Now;
             Console.WriteLine(n);
-            DateTime q = DateTime.Now.AddSeconds(10);
+            DateTime q = n.AddSeconds(GetDuration());
             Console.WriteLine(q);
-            int x = GetDuration(); 
-            Console.WriteLine(x);         
+            while (DateTime.Now<q)
+            {
+                Console.WriteLine($"Breath in...");
+                ShowCountDown(1);
+
+                Console.WriteLine($"Breath in...");
+                ShowCountDown(1);
+
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+ 
+
        
         }
     }
