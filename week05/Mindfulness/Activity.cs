@@ -42,6 +42,7 @@ namespace sport
             while (currenTime < futureTime)
             {
                 Console.Write(spinners[i]);
+                Thread.Sleep(1000); 
                 Console.Write("\b \b");
 
                 i++;
