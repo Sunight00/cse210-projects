@@ -32,6 +32,7 @@ class Program
 
                 Console.Clear();
                 Console.WriteLine("Get ready....");
+                activity.ShowSpinner(duration);
           
                 
                 activity.DisplayEndingMessage();

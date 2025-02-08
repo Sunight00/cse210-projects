@@ -27,15 +27,29 @@ namespace sport
         public void ShowSpinner(int seconds)
         {
             DateTime currenTime = DateTime.Now;
-            DateTime futureTime = currenTime.AddSeconds(_duration);
+            DateTime futureTime = currenTime.AddSeconds(seconds);
 
             List<string> spinners = new List<string>();
             spinners=["|","/","-","\\","|","/","-","//"];
-            foreach(string spinner in spinners)
+            /*foreach(string spinner in spinners)
             {
                 Console.Write(spinner);
                 Thread.Sleep(1000);
                 Console.Write("\b \b");
+            }*/
+
+            int i = 0;
+            while (currenTime < futureTime)
+            {
+                Console.Write(spinners[i]);
+                Console.Write("\b \b");
+
+                i++;
+
+                if (i >= spinners.Count())
+                {
+                    i=0;
+                }
             }
 
         }
