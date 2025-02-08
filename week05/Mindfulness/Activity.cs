@@ -28,6 +28,7 @@ namespace sport
         {
             DateTime currenTime = DateTime.Now;
             DateTime futureTime = currenTime.AddSeconds(seconds);
+            Console.Write(seconds);
 
             List<string> spinners = new List<string>();
             spinners=["|","/","-","\\","|","/","-","//"];
