@@ -1,4 +1,4 @@
-namespace sport
+namespace activity
 {
     public class Activity
     {
@@ -31,7 +31,7 @@ namespace sport
             Console.Write(seconds);
 
             List<string> spinners = new List<string>();
-            spinners=["|","/","-","\\","|","/","-","//"];
+            spinners=["|","/","-","\\","|","/","-","//","|","/","-","\\","|","/","-","//","//","|","/","-","\\","|","/","-","//","//","|","/","-","\\","|","/","-","//"];
             /*foreach(string spinner in spinners)
             {
                 Console.Write(spinner);

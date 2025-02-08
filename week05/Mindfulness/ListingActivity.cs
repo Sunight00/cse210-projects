@@ -1,4 +1,4 @@
-namespace sport
+namespace activity
 {
     public class ListingActivity : Activity
     {
