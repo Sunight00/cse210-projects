@@ -80,7 +80,23 @@ namespace activity
         
         public void ShowCountDown(int second)
         {
-            
+            List<int> countDown = [4,3,2,1];
+            int i = 0;
+            double futureTime = second;
+            double currentTime = 0;
+            while (currentTime < futureTime)
+            {
+                Thread.Sleep(1000);
+                currentTime += 1;
+                Console.Write("Breath in...");
+                foreach(int n in countDown)
+                {
+                    Console.Write(n);
+                    Thread.Sleep(1000);
+                    Console.Write("\b");
+                }
+                
+            }
         }
     }
 }
