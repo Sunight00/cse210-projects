@@ -29,13 +29,19 @@ namespace sport
             DateTime currenTime = DateTime.Now;
             DateTime futureTime = currenTime.AddSeconds(_duration);
 
+            List<string> spinners = new List<string>();
+            spinners=["|","/","-","\\","|","/","-","//"];
+            foreach(string spinner in spinners)
+            {
+                Console.Write(spinner);
+                Thread.Sleep(1000);
+                Console.Write("\b \b");
+            }
+
         }
         public void ShowCountDown(int second)
         {
-            string n = for (int i =5;)
-            {
-                
-            }
+            
         }
     }
 }
