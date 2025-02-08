@@ -26,11 +26,16 @@ namespace sport
         }
         public void ShowSpinner(int seconds)
         {
+            DateTime currenTime = DateTime.Now;
+            DateTime futureTime = currenTime.AddSeconds(_duration);
 
         }
         public void ShowCountDown(int second)
         {
-
+            string n = for (int i =5;)
+            {
+                
+            }
         }
     }
 }

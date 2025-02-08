@@ -31,14 +31,9 @@ class Program
                 activity.DisplayStartingMessage();
 
                 Console.Clear();
-                Console.Write("Loading...");
-                Console.Write("\b \b");
+                Console.WriteLine("Get ready....");
+          
                 
-
-                Thread.Sleep(10000);
-
-                 // Erase the + character
-                Console.Write("-");
                 activity.DisplayEndingMessage();
                 
             }
