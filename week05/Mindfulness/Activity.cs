@@ -80,14 +80,15 @@ namespace activity
         
         public void ShowCountDown(int second)
         {
-            List<int> countDown = [4,3,2,1];
+            List<int> countDown = [5,4,3,2,1];
             {
 
                 foreach(int n in countDown)
                 {
                     Console.Write(n);
                     Thread.Sleep(1000);
-                    Console.Write("\b");
+                    Console.Write("\b \b");
+                    
                 }
                 
             }

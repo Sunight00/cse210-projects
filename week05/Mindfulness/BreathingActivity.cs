@@ -16,11 +16,12 @@ namespace activity
             Console.WriteLine(q);
             while (DateTime.Now<q)
             {
-                Console.WriteLine($"Breath in...");
-                ShowCountDown(1);
+                Console.Write($"Breath in...");
+                ShowCountDown(0);
+                Console.WriteLine();
 
-                Console.WriteLine($"Breath in...");
-                ShowCountDown(1);
+                Console.Write($"Breath out...");
+                ShowCountDown(0);
 
                 Console.WriteLine();
                 Console.WriteLine();
