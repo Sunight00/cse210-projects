@@ -24,20 +24,43 @@ namespace activity
         {
             Console.WriteLine("Congrats you've done a good job.");
         }
+
         public void ShowSpinner(int seconds)
         {
-            DateTime currenTime = DateTime.Now;
+        List<string> spinners = new List<string>();
+        spinners = ["|", "/", "-", "\\"];
+       
+        int i = 0;
+        double futureTime = seconds;
+        double currentTime = 0;
+        while (currentTime < futureTime)
+        {
+            Console.Write(spinners[i]);
+            Thread.Sleep(1000);
+            currentTime += 1;
+            Console.Write("\b");
+ 
+            i++;
+ 
+            if (i >= spinners.Count)
+            {
+                i = 0;
+            }
+        }
+           /* DateTime currenTime = DateTime.Now;
             DateTime futureTime = currenTime.AddSeconds(seconds);
-            Console.Write(seconds);
+            Console.WriteLine(futureTime);
+            DateTime currentTime = DateTime.Now;
+            Console.WriteLine(currenTime);
 
             List<string> spinners = new List<string>();
             spinners=["|","/","-","\\","|","/","-","//","|","/","-","\\","|","/","-","//","//","|","/","-","\\","|","/","-","//","//","|","/","-","\\","|","/","-","//"];
-            /*foreach(string spinner in spinners)
+            foreach(string spinner in spinners)
             {
                 Console.Write(spinner);
                 Thread.Sleep(1000);
                 Console.Write("\b \b");
-            }*/
+            }
 
             int i = 0;
             while (currenTime < futureTime)
@@ -51,10 +74,10 @@ namespace activity
                 if (i >= spinners.Count())
                 {
                     i=0;
-                }
+                }*/
             }
 
-        }
+        
         public void ShowCountDown(int second)
         {
             
