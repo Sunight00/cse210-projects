@@ -124,9 +124,19 @@ class Program
                 ListingActivity listingActivity = new ListingActivity();
                 Console.WriteLine("List as many responses as you can to the following prompt.");
                 Console.WriteLine(listingActivity.GetRandomPrompt());
+                Console.WriteLine("You may begin in");
                 listingActivity.ShowCountDown(7);
 
-                listingActivity.GetListFromUser();
+                
+
+                DateTime now = DateTime.Now;
+            //Console.WriteLine(n);
+                DateTime future = now.AddSeconds(duration);
+                while(DateTime.Now < future)
+                {
+                     listingActivity.GetListFromUser();
+                }
+               
             }
        } 
       
