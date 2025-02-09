@@ -154,7 +154,7 @@ class Program
                     total=total+x;
                     //Console.WriteLine($"Total done activities {x}");
                 }
-                 Console.WriteLine($"Total done activities {total}");
+                 Console.WriteLine($"Total done activities '{total}'");
                 break;
                 
             }
