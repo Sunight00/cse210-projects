@@ -50,9 +50,14 @@ namespace activity
             {
                 foreach (string question in _questions)
                 {
+                    if (DateTime.Now != q)
+                    {
+                        Console.WriteLine(question);
+                        Thread.Sleep(6000);
+                    }
+                    else 
+                        break;
                     
-                    Console.WriteLine(question);
-                    Thread.Sleep(6000);
                     
                 }
                 

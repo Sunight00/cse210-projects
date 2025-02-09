@@ -60,7 +60,7 @@ class Program
                 ReflectingActivity reflectingActivity = new ReflectingActivity(name,description,duration);
                 reflectingActivity.DisplayPrompt();
                 Console.WriteLine();
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
                 reflectingActivity.DisplayQuestions();
                 Thread.Sleep(1000);
 
