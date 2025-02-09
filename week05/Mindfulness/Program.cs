@@ -65,10 +65,6 @@ class Program
 
                
                 Console.Clear();
-                Console.WriteLine("Get ready....");
-                activity.ShowSpinner(5);
-
-                Console.WriteLine();
 
                 ReflectingActivity reflectingActivity = new ReflectingActivity(name,description,duration);
 
