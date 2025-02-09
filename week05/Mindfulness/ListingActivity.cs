@@ -18,9 +18,20 @@ namespace activity
         }
 
         public List<string> GetListFromUser()
-        {
+        {  
+            while (1<2)
+            {Console.WriteLine("ddddd");
+            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("ssss");
+
             
             return [];
+            }
+            
+            
+
+            
         }
     }
 }

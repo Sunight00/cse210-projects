@@ -123,6 +123,9 @@ class Program
 
                 ListingActivity listingActivity = new ListingActivity();
                 Console.WriteLine(listingActivity.GetRandomPrompt());
+                listingActivity.ShowCountDown(7);
+
+                listingActivity.GetListFromUser();
             }
        } 
       
