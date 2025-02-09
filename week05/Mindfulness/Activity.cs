@@ -18,7 +18,7 @@ namespace activity
         }
         public void DisplayStartingMessage()
         {
-            Console.WriteLine($"{_name}: {_description} Time: {_duration}");
+            Console.WriteLine($"{_name}: {_description}");
         }
         public void DisplayEndingMessage()
         {

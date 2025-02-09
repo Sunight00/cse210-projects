@@ -17,8 +17,8 @@ namespace activity
         {
             Random randomGenerator = new Random();
             int number = randomGenerator.Next(_prompts.Count());
-            Console.WriteLine(_prompts.Count());
-            return "";
+            
+            return _prompts[number];
         }
         public string GetRandomQuestion()
         {
