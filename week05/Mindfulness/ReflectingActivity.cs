@@ -15,6 +15,9 @@ namespace activity
         }
         public string GetRandomPrompt()
         {
+            Random randomGenerator = new Random();
+            int number = randomGenerator.Next(_prompts.Count());
+            Console.WriteLine(_prompts.Count());
             return "";
         }
         public string GetRandomQuestion()
