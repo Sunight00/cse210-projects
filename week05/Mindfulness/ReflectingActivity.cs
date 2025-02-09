@@ -54,8 +54,9 @@ namespace activity
             while (DateTime.Now<q)
             {
                 Console.Write(GetRandomQuestion());
-                ShowSpinner(5);
-                Thread.Sleep(3000);
+                ShowSpinner(7);
+                
+                Console.WriteLine();
                 Console.WriteLine();
                 
             }
