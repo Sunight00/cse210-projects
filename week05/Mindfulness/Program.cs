@@ -5,9 +5,9 @@ using activity;
 class Program
 {
     static void Main(string[] args)
-    {  
+    {   int count =0;
        while(true)
-       {
+       {    
             Console.WriteLine("Welcome TO Your Mindfulness");
             Console.WriteLine("===========================");
             Console.WriteLine("---------Activities--------");
@@ -16,6 +16,8 @@ class Program
             Console.WriteLine("3. Listing Activity");
             Console.Write("Choose Activity: ");
             string option =Console.ReadLine();
+            count=+1;
+            Console.WriteLine(count);
 
             if (option == "1")
             {
@@ -140,9 +142,12 @@ class Program
                 listingActivity.Run();
                
             }
+
+            
        } 
       
-       
+    
+
 
     }
 }
