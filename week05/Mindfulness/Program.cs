@@ -58,7 +58,7 @@ class Program
                 Console.WriteLine();
 
                 ReflectingActivity reflectingActivity = new ReflectingActivity(name,description,duration);
-                Console.WriteLine(reflectingActivity.GetRandomPrompt());
+                reflectingActivity.DisplayPrompt();
                 Console.WriteLine();
 
                 //reflectingActivity.Run();

@@ -40,10 +40,10 @@ namespace activity
            }
            return question;     
         }
-        
+
         public void DisplayPrompt()
         {
-
+            Console.WriteLine(GetRandomPrompt());
         }
         public void DisplayQuestions()
         {
