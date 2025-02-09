@@ -91,10 +91,6 @@ class Program
                 Console.Clear();
                 reflectingActivity.DisplayQuestions();
                 
-                
-
-
-
                 Console.Clear();
                 activity.DisplayEndingMessage();
                 Console.WriteLine();
@@ -127,9 +123,7 @@ class Program
                 Console.WriteLine("List as many responses as you can to the following prompt.");
                 Console.WriteLine(listingActivity.GetRandomPrompt());
                 Console.WriteLine("You may begin in");
-                listingActivity.ShowCountDown(5);
-
-                
+                listingActivity.ShowCountDown(5);               
 
                 DateTime now = DateTime.Now;
                 //Console.WriteLine(n);
@@ -144,8 +138,6 @@ class Program
                 Console.Clear();
                 activity.DisplayEndingMessage();
                 Console.WriteLine();
-                
-
                
             }
             else if (option == "4")
