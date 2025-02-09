@@ -42,27 +42,7 @@ namespace activity
         }
         public void DisplayQuestions()
         {
-            DateTime n = DateTime.Now;
-            //Console.WriteLine(n);
-            DateTime q = n.AddSeconds(GetDuration());
-            //Console.WriteLine(q);
-            while (DateTime.Now<q)
-            {
-                foreach (string question in _questions)
-                {
-                    if (DateTime.Now != q)
-                    {
-                        Console.WriteLine(question);
-                        Thread.Sleep(6000);
-                    }
-                    else 
-                        break;
-                    
-                    
-                }
-                
-            }
-
+           
         }
     }
 }

@@ -58,12 +58,23 @@ class Program
                 Console.WriteLine();
 
                 ReflectingActivity reflectingActivity = new ReflectingActivity(name,description,duration);
+
+                Console.Clear();
+                Console.WriteLine("Get ready....");
+                activity.ShowSpinner(5);
+
+                Console.WriteLine("Consider The Following Prompt");
+                Console.WriteLine();
                 reflectingActivity.DisplayPrompt();
                 Console.WriteLine();
-                //Thread.Sleep(1000);
-                reflectingActivity.DisplayQuestions();
-                Thread.Sleep(1000);
 
+                Console.WriteLine("When you have something in mind, press enter to continue");
+                Console.ReadLine();
+                //Thread.Sleep(1000);
+                //reflectingActivity.DisplayQuestions();
+                //Thread.Sleep(1000);
+                
+                Console.Clear();
                 activity.ShowSpinner(3);
                 Console.Clear();
                 activity.DisplayEndingMessage();
