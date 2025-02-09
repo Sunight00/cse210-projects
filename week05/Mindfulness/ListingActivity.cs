@@ -10,7 +10,7 @@ namespace activity
             {
                 Console.WriteLine(n);
             }*/
-            Console.WriteLine($"Number of listed items {_count}");
+            Console.WriteLine($"Number of listed items {GetListFromUser().Count}");
         }
         public string GetRandomPrompt()
         {
