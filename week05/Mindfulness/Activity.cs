@@ -17,8 +17,12 @@ namespace activity
 
         }
         public void DisplayStartingMessage()
-        {
+        {   
+            Console.Write($"Welcome to the {_name}");
+            Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine($"{_name}: {_description}");
+            Console.WriteLine();
         }
         public void DisplayEndingMessage()
         {   

@@ -21,15 +21,19 @@ class Program
             {
                 string name = "Breathing Activity";
                 string description = "This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
+                int duration = 0;
+                Activity activity = new Activity(name,description,duration);
                 Console.WriteLine();
+                
+                activity.DisplayStartingMessage();
+                
+            
                 Console.Write("Time duration for your activity in seconds: ");
                 string du = Console.ReadLine();
                 Console.WriteLine();
-                int duration = int.Parse(du);
+                duration = int.Parse(du);
 
-                Activity activity = new Activity(name,description,duration);
-                activity.DisplayStartingMessage();
-
+               
                 Console.Clear();
                 Console.WriteLine("Get ready....");
                 activity.ShowSpinner(5);
@@ -47,14 +51,23 @@ class Program
             {
                 string name = "Reflecting Activity";
                 string description = "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
+                int duration = 0;
+                Activity activity = new Activity(name,description,duration);
                 Console.WriteLine();
+                
+                activity.DisplayStartingMessage();
+                
+            
                 Console.Write("Time duration for your activity in seconds: ");
                 string du = Console.ReadLine();
                 Console.WriteLine();
-                int duration = int.Parse(du);
+                duration = int.Parse(du);
 
-                Activity activity = new Activity(name,description,duration);
-                activity.DisplayStartingMessage();
+               
+                Console.Clear();
+                Console.WriteLine("Get ready....");
+                activity.ShowSpinner(5);
+
                 Console.WriteLine();
 
                 ReflectingActivity reflectingActivity = new ReflectingActivity(name,description,duration);
