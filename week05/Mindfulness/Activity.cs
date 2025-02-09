@@ -85,7 +85,7 @@ namespace activity
             }
 
         
-        public void ShowCountDown(int second)
+        /*public void ShowCountDown(int second)
         {
             List<int> countDown = [4,3,2,1];
             {
@@ -99,10 +99,10 @@ namespace activity
                 }
                 
             }
-        }
+        }*/
 
 
-        public void howCountDown(int second)
+        public void ShowCountDown(int second)
         {
             int n = 0;
             int seconds = second;
