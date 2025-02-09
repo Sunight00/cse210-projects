@@ -4,13 +4,11 @@ namespace activity
     {
         private int _count;
         private List<string> _prompts;
+        private List<string> MyUserList =[];
         public void Run()
         {
-            /*foreach(string n in GetListFromUser() )
-            {
-                Console.WriteLine(n);
-            }*/
-            Console.WriteLine($"Number of listed items {GetListFromUser().Count}");
+           
+            Console.WriteLine($"Number of listed items {MyUserList.Count()}");
         }
         public string GetRandomPrompt()
         {
@@ -23,13 +21,13 @@ namespace activity
 
         public List<string> GetListFromUser()
         {  
-            List<string> list =[];
+            
            string input = Console.ReadLine();
-           list.Add(input);
+           MyUserList.Add(input);
 
                     
                 
-            return list;
+            return MyUserList;
                     
         }
     }
