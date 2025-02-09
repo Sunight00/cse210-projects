@@ -75,9 +75,12 @@ class Program
                 //Thread.Sleep(1000);
                 Console.WriteLine("Now ponder on each of the following questions as they are related to this experience.");
                 Console.Write("You may beign in:");
-                reflectingActivity.ShowCountDown(5);
+                reflectingActivity.ShowCountDown(0);
                 Console.Clear();
                 activity.ShowSpinner(3);
+
+
+                
                 Console.Clear();
                 activity.DisplayEndingMessage();
                 Console.WriteLine();

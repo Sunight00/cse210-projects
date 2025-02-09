@@ -33,7 +33,10 @@ namespace activity
         }
         public string GetRandomQuestion()
         {   
-           return "";     
+            Random randomGenerator = new Random();
+            int number = randomGenerator.Next(_questions.Count());
+            
+            return _questions[number];     
         }
 
         public void DisplayPrompt()
