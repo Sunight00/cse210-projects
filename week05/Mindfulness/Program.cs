@@ -122,6 +122,7 @@ class Program
                 Console.WriteLine();
 
                 ListingActivity listingActivity = new ListingActivity();
+                Console.WriteLine("List as many responses as you can to the following prompt.");
                 Console.WriteLine(listingActivity.GetRandomPrompt());
                 listingActivity.ShowCountDown(7);
 
