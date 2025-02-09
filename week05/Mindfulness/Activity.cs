@@ -21,7 +21,10 @@ namespace activity
             Console.WriteLine($"{_name}: {_description}");
         }
         public void DisplayEndingMessage()
-        {
+        {   
+            Console.WriteLine("Well done.");
+            Console.WriteLine();
+            ShowSpinner(5);
             Console.WriteLine($"You have completed another {_duration} seconds of {_name}");
         }
 
