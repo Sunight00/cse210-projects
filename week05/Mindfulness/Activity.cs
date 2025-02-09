@@ -22,7 +22,7 @@ namespace activity
         }
         public void DisplayEndingMessage()
         {
-            Console.WriteLine("Congrats you've done a good job.");
+            Console.WriteLine($"You have completed another {_duration} seconds of {_name}");
         }
 
         public void ShowSpinner(int seconds)
