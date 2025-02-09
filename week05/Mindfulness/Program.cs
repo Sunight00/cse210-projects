@@ -63,6 +63,7 @@ class Program
 
                 //reflectingActivity.Run();
                 Console.WriteLine(reflectingActivity.GetRandomQuestion());
+                
             }
        } 
       

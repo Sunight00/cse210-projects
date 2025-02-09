@@ -33,12 +33,7 @@ namespace activity
         }
         public string GetRandomQuestion()
         {   
-           string question = "";
-           foreach(string display in _questions)
-           {
-                question = display;
-           }
-           return question;     
+           return "";     
         }
 
         public void DisplayPrompt()
@@ -47,6 +42,18 @@ namespace activity
         }
         public void DisplayQuestions()
         {
+            DateTime n = DateTime.Now;
+            //Console.WriteLine(n);
+            DateTime q = n.AddSeconds(GetDuration());
+            //Console.WriteLine(q);
+            while (DateTime.Now<q)
+            {
+                foreach (string question in _questions)
+                {
+                    
+                }
+                Thread.Sleep(6);
+            }
 
         }
     }
