@@ -5,10 +5,10 @@ using activity;
 class Program
 {
     static void Main(string[] args)
-    {  
+    {  List<int> count =[];
        while(true)
        {    
-            List<int> count =[];
+            
             Console.WriteLine("Welcome To Your Mindfulness");
             Console.WriteLine("===========================");
             Console.WriteLine("---------Activities--------");
@@ -96,6 +96,7 @@ class Program
                 Console.Clear();
                 activity.DisplayEndingMessage();
                 Console.WriteLine();
+                count.Add(1);
                 
             }
             else if (option == "3")
@@ -140,6 +141,7 @@ class Program
                 Console.Clear();
                 activity.DisplayEndingMessage();
                 Console.WriteLine();
+                count.Add(1);
                
             }
             else if (option == "4")
@@ -150,6 +152,7 @@ class Program
                 foreach(int x in count)
                 {
                     total=total+x;
+                    //Console.WriteLine($"Total done activities {x}");
                 }
                  Console.WriteLine($"Total done activities {total}");
                 break;
