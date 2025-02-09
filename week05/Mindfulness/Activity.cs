@@ -101,6 +101,35 @@ namespace activity
             }
         }
 
+
+        public void howCountDown(int second)
+        {
+            int n = 0;
+            int seconds = second;
+            {
+                while(n!=second)
+                {
+                    Console.Write(seconds);
+                    Thread.Sleep(1000);
+                    Console.Write("\b \b");
+                    seconds-=1;
+                    n+=1;  
+                }
+            }
+            /*List<int> countDown = [4,3,2,1];
+            {
+
+                foreach(int n in countDown)
+                {
+                    Console.Write(n);
+                    Thread.Sleep(1000);
+                    Console.Write("\b \b");
+                    
+                }
+                
+            }*/
+        }
+
         public int GetDuration()
         {
             return _duration;

@@ -88,7 +88,7 @@ class Program
                 //Thread.Sleep(1000);
                 Console.WriteLine("Now ponder on each of the following questions as they are related to this experience."); 
                 Console.Write("You may begin in:");
-                reflectingActivity.ShowCountDown(0);
+                reflectingActivity.howCountDown(7);
                 
                 Console.Clear();
                 reflectingActivity.DisplayQuestions();
