@@ -8,7 +8,7 @@ class Program
     {  
        while(true)
        {    
-            int count  =0;
+            List<int> count =[];
             Console.WriteLine("Welcome To Your Mindfulness");
             Console.WriteLine("===========================");
             Console.WriteLine("---------Activities--------");
@@ -21,7 +21,7 @@ class Program
             
 
             if (option == "1" )
-            {
+            { 
                 string name = "Breathing Activity";
                 string description = "This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
                 Activity welcome = new Activity(name,description,0);
@@ -47,7 +47,7 @@ class Program
                 Console.Clear();
                 activity.DisplayEndingMessage();
                 Console.WriteLine();
-                count = count +1;
+                count.Add(1);
             }
             
             else if (option == "2")
@@ -145,7 +145,13 @@ class Program
             else if (option == "4")
             {
                 Console.Clear();
-                Console.WriteLine($"Total done activities {count}");
+               
+                int total =0;
+                foreach(int x in count)
+                {
+                    total=total+x;
+                }
+                 Console.WriteLine($"Total done activities {total}");
                 break;
                 
             }
