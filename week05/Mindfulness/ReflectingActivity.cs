@@ -5,7 +5,7 @@ namespace activity
         private List<string> _prompts;
         private List<string> _questions;
 
-        public ReflectingActivity()
+        public ReflectingActivity(string name, string description, int duration) : base(name, description, duration)
         {
             _prompts=["Think of a time when you stood up for someone else.","Think of a time when you did something really difficult.","Think of a time when you helped someone in need.","Think of a time when you did something truly selfless."];
 
@@ -13,8 +13,17 @@ namespace activity
         }
         public void Run()
         {
-
+            DateTime n = DateTime.Now;
+            //Console.WriteLine(n);
+            DateTime q = n.AddSeconds(GetDuration());
+            //Console.WriteLine(q);
+            while (DateTime.Now<q)
+            {
+                Console.WriteLine(GetRandomQuestion());
+                Thread.Sleep(6);
+            }
         }
+
         public string GetRandomPrompt()
         {
             Random randomGenerator = new Random();
@@ -23,9 +32,15 @@ namespace activity
             return _prompts[number];
         }
         public string GetRandomQuestion()
-        {
-            return "";
+        {   
+           string question = "";
+           foreach(string display in _questions)
+           {
+                question = display;
+           }
+           return question;     
         }
+        
         public void DisplayPrompt()
         {
 

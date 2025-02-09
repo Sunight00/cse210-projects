@@ -12,8 +12,8 @@ class Program
             Console.WriteLine("===========================");
             Console.WriteLine("---------Activities--------");
             Console.WriteLine("1. Breath Activity.");
-            Console.WriteLine("2. LIsting Activity");
-            Console.WriteLine("3. Reflecting Activuty.");
+            Console.WriteLine("2. Reflecting Activuty.");
+            Console.WriteLine("3. Listing Activity");
             Console.Write("Choose Activity: ");
             string option =Console.ReadLine();
 
@@ -57,8 +57,12 @@ class Program
                 activity.DisplayStartingMessage();
                 Console.WriteLine();
 
-                ReflectingActivity reflectingActivity = new ReflectingActivity();
+                ReflectingActivity reflectingActivity = new ReflectingActivity(name,description,duration);
                 Console.WriteLine(reflectingActivity.GetRandomPrompt());
+                Console.WriteLine();
+
+                //reflectingActivity.Run();
+                Console.WriteLine(reflectingActivity.GetRandomQuestion());
             }
        } 
       
