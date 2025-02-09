@@ -46,6 +46,16 @@ namespace activity
         public void DisplayQuestions()
         {
            
+
+           DateTime n = DateTime.Now;
+            //Console.WriteLine(n);
+            DateTime q = n.AddSeconds(GetDuration());
+            //Console.WriteLine(q);
+            while (DateTime.Now<q)
+            {
+                Console.WriteLine(GetRandomQuestion());
+                Thread.Sleep(5000);
+            }
         }
     }
 }

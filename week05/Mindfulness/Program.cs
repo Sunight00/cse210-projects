@@ -73,14 +73,17 @@ class Program
                 //Thread.Sleep(1000);
                 //reflectingActivity.DisplayQuestions();
                 //Thread.Sleep(1000);
-                Console.WriteLine("Now ponder on each of the following questions as they are related to this experience.");
-                Console.Write("You may beign in:");
+                Console.WriteLine("Now ponder on each of the following questions as they are related to this experience."); 
+                Console.Write("You may begin in:");
                 reflectingActivity.ShowCountDown(0);
-                Console.Clear();
-                activity.ShowSpinner(3);
-
-
                 
+                Console.Clear();
+                reflectingActivity.DisplayQuestions();
+                reflectingActivity.ShowSpinner(0);
+                Thread.Sleep(10000);
+
+
+
                 Console.Clear();
                 activity.DisplayEndingMessage();
                 Console.WriteLine();
