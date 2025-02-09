@@ -79,8 +79,8 @@ class Program
                 
                 Console.Clear();
                 reflectingActivity.DisplayQuestions();
-                activity.ShowSpinner(5);
-                Thread.Sleep(10000);
+                
+                
 
 
 

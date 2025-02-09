@@ -53,8 +53,11 @@ namespace activity
             //Console.WriteLine(q);
             while (DateTime.Now<q)
             {
-                Console.WriteLine(GetRandomQuestion());
-                Thread.Sleep(5000);
+                Console.Write(GetRandomQuestion());
+                ShowSpinner(5);
+                Thread.Sleep(3000);
+                Console.WriteLine();
+                
             }
         }
     }
