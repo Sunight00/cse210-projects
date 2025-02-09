@@ -19,7 +19,7 @@ class Program
             string option =Console.ReadLine();
             
 
-            if (option == "1")
+            if (option == "1" )
             {
                 string name = "Breathing Activity";
                 string description = "This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
@@ -48,7 +48,7 @@ class Program
                 Console.WriteLine();
                 count+=1;
             }
-
+            
             else if (option == "2")
             {
                 string name = "Reflecting Activity";
