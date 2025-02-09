@@ -79,7 +79,7 @@ class Program
                 
                 Console.Clear();
                 reflectingActivity.DisplayQuestions();
-                reflectingActivity.ShowSpinner(0);
+                reflectingActivity.ShowSpinner(5);
                 Thread.Sleep(10000);
 
 
