@@ -10,8 +10,12 @@ namespace activity
         }
         public string GetRandomPrompt()
         {
-            return "";
+            Random randomGenerator = new Random();
+            int number = randomGenerator.Next(_prompts.Count());
+            
+            return _prompts[number];
         }
+        
         public List<string> GetListFromUser()
         {
             return [];

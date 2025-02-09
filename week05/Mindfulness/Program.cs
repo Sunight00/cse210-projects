@@ -124,6 +124,9 @@ class Program
                 activity.ShowSpinner(5);
 
                 Console.WriteLine();
+
+                ListingActivity listingActivity = new ListingActivity();
+                Console.WriteLine(listingActivity.GetRandomPrompt());
             }
        } 
       
