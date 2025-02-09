@@ -51,8 +51,11 @@ namespace activity
                 foreach (string question in _questions)
                 {
                     
+                    Console.WriteLine(question);
+                    Thread.Sleep(6000);
+                    
                 }
-                Thread.Sleep(6);
+                
             }
 
         }

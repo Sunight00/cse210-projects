@@ -35,8 +35,8 @@ class Program
                 activity.ShowSpinner(5);
 
                 Console.WriteLine();
-                BreathingActivity breath = new BreathingActivity(name,description,duration);
-                breath.Run();
+                BreathingActivity breathe = new BreathingActivity(name,description,duration);
+                breathe.Run();
                 activity.ShowSpinner(3);
                 Console.Clear();
                 activity.DisplayEndingMessage();
@@ -60,9 +60,14 @@ class Program
                 ReflectingActivity reflectingActivity = new ReflectingActivity(name,description,duration);
                 reflectingActivity.DisplayPrompt();
                 Console.WriteLine();
+                Thread.Sleep(1000);
+                reflectingActivity.DisplayQuestions();
+                Thread.Sleep(1000);
 
-                //reflectingActivity.Run();
-                Console.WriteLine(reflectingActivity.GetRandomQuestion());
+                activity.ShowSpinner(3);
+                Console.Clear();
+                activity.DisplayEndingMessage();
+                Console.WriteLine();
                 
             }
        } 
