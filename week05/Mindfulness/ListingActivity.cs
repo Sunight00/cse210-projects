@@ -2,7 +2,7 @@ namespace activity
 {
     public class ListingActivity : Activity
     {
-        private int _count;
+        //private int _count;
         private List<string> _prompts;
         private List<string> MyUserList =[];
         public void Run()
