@@ -8,7 +8,7 @@ class Program
     {  
        while(true)
        {    
-            Console.WriteLine("Welcome TO Your Mindfulness");
+            Console.WriteLine("Welcome To Your Mindfulness");
             Console.WriteLine("===========================");
             Console.WriteLine("---------Activities--------");
             Console.WriteLine("1. Breath Activity.");
