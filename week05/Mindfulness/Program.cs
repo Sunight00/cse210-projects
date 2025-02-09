@@ -140,6 +140,12 @@ class Program
                 }
 
                 listingActivity.Run();
+                Thread.Sleep(3000);
+                Console.Clear();
+                activity.DisplayEndingMessage();
+                Console.WriteLine();
+                
+
                
             }
             else if (option == "4")
