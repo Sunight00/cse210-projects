@@ -7,7 +7,7 @@ class Program
     static void Main(string[] args)
     {  
        while(true)
-       {    
+       {    int count = 0;
             Console.WriteLine("Welcome To Your Mindfulness");
             Console.WriteLine("===========================");
             Console.WriteLine("---------Activities--------");
@@ -46,6 +46,7 @@ class Program
                 Console.Clear();
                 activity.DisplayEndingMessage();
                 Console.WriteLine();
+                count+=1;
             }
 
             else if (option == "2")
@@ -143,6 +144,7 @@ class Program
             else if (option == "4")
             {
                 Console.Clear();
+                Console.WriteLine($"Total done activities {count}");
                 break;
                 
             }
