@@ -5,7 +5,7 @@ using activity;
 class Program
 {
     static void Main(string[] args)
-    {   int count =0;
+    {  int count =0;
        while(true)
        {    
             Console.WriteLine("Welcome TO Your Mindfulness");
@@ -14,10 +14,10 @@ class Program
             Console.WriteLine("1. Breath Activity.");
             Console.WriteLine("2. Reflecting Activuty.");
             Console.WriteLine("3. Listing Activity");
+            Console.WriteLine("4. Quit");
             Console.Write("Choose Activity: ");
             string option =Console.ReadLine();
-            count=+1;
-            Console.WriteLine(count);
+            
 
             if (option == "1")
             {
@@ -132,7 +132,7 @@ class Program
                 
 
                 DateTime now = DateTime.Now;
-            //Console.WriteLine(n);
+                //Console.WriteLine(n);
                 DateTime future = now.AddSeconds(duration);
                 while(DateTime.Now < future)
                 {
@@ -142,12 +142,17 @@ class Program
                 listingActivity.Run();
                
             }
-
+            else if (option == "4")
+            {
+                break;
+            }
+        count=+1;
+        Console.WriteLine(count);
             
        } 
       
     
-
+    
 
     }
 }
