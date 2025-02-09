@@ -37,7 +37,7 @@ class Program
                 Console.WriteLine();
                 BreathingActivity breathe = new BreathingActivity(name,description,duration);
                 breathe.Run();
-                activity.ShowSpinner(3);
+                
                 Console.Clear();
                 activity.DisplayEndingMessage();
                 Console.WriteLine();

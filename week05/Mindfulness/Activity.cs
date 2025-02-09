@@ -23,8 +23,8 @@ namespace activity
         public void DisplayEndingMessage()
         {   
             Console.WriteLine("Well done.");
-            Console.WriteLine();
             ShowSpinner(5);
+            Console.WriteLine();
             Console.WriteLine($"You have completed another {_duration} seconds of {_name}");
         }
 
