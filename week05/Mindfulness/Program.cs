@@ -41,9 +41,20 @@ class Program
                 Console.Clear();
                 activity.DisplayEndingMessage();
                 Console.WriteLine();
+            }
 
+            else if (option == "2")
+            {
+                string name = "Reflecting Activity";
+                string description = "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
+                Console.WriteLine();
+                Console.Write("Time duration for your activity in seconds: ");
+                string du = Console.ReadLine();
+                Console.WriteLine();
+                int duration = int.Parse(du);
 
-                
+                Activity activity = new Activity(name,description,duration);
+                activity.DisplayStartingMessage();
             }
        } 
       
