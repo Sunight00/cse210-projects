@@ -5,7 +5,7 @@ using activity;
 class Program
 {
     static void Main(string[] args)
-    {  int count =0;
+    {  
        while(true)
        {    
             Console.WriteLine("Welcome TO Your Mindfulness");
@@ -144,11 +144,11 @@ class Program
             }
             else if (option == "4")
             {
+                Console.Clear();
                 break;
+                
             }
-        count=+1;
-        Console.WriteLine(count);
-            
+
        } 
       
     
