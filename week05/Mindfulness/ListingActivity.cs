@@ -6,7 +6,9 @@ namespace activity
         private List<string> _prompts;
         public void Run()
         {
-            
+            foreach(string n in GetListFromUser());
+            _count=+1;
+            Console.WriteLine(_count);
         }
         public string GetRandomPrompt()
         {
@@ -27,6 +29,6 @@ namespace activity
                 
             return list;
                     
-            }
+        }
     }
 }

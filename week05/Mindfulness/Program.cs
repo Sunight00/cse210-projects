@@ -136,6 +136,8 @@ class Program
                 {
                      listingActivity.GetListFromUser();
                 }
+
+                listingActivity.Run();
                
             }
        } 
