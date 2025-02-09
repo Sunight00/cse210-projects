@@ -102,6 +102,29 @@ class Program
                 Console.WriteLine();
                 
             }
+            else if (option == "3")
+            {
+                string name = "Listing Activity";
+                string description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
+                int duration = 0;
+                Activity activity = new Activity(name,description,duration);
+                Console.WriteLine();
+                
+                activity.DisplayStartingMessage();
+                
+            
+                Console.Write("Time duration for your activity in seconds: ");
+                string du = Console.ReadLine();
+                Console.WriteLine();
+                duration = int.Parse(du);
+
+               
+                Console.Clear();
+                Console.WriteLine("Get ready....");
+                activity.ShowSpinner(5);
+
+                Console.WriteLine();
+            }
        } 
       
        
