@@ -38,7 +38,7 @@ namespace activity
             Console.Write(spinners[i]);
             Thread.Sleep(1000);
             currentTime += 1;
-            Console.Write("\b");
+            Console.Write("\b \b");
  
             i++;
  
@@ -80,7 +80,7 @@ namespace activity
         
         public void ShowCountDown(int second)
         {
-            List<int> countDown = [5,4,3,2,1];
+            List<int> countDown = [4,3,2,1];
             {
 
                 foreach(int n in countDown)
