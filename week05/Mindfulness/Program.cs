@@ -127,7 +127,7 @@ class Program
                 Console.WriteLine("List as many responses as you can to the following prompt.");
                 Console.WriteLine(listingActivity.GetRandomPrompt());
                 Console.WriteLine("You may begin in");
-                listingActivity.ShowCountDown(7);
+                listingActivity.ShowCountDown(5);
 
                 
 

@@ -6,9 +6,11 @@ namespace activity
         private List<string> _prompts;
         public void Run()
         {
-            foreach(string n in GetListFromUser());
-            _count=+1;
-            Console.WriteLine(_count);
+            foreach(string n in GetListFromUser())
+            {
+                Console.WriteLine(n);
+            }
+            Console.WriteLine($"Number of listed items {_count}");
         }
         public string GetRandomPrompt()
         {
