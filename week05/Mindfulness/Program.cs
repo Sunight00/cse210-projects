@@ -23,18 +23,17 @@ class Program
             {
                 string name = "Breathing Activity";
                 string description = "This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
-                int duration = 0;
-                Activity activity = new Activity(name,description,duration);
+                Activity welcome = new Activity(name,description,0);
                 Console.WriteLine();
                 
-                activity.DisplayStartingMessage();
+                welcome.DisplayStartingMessage();
                 
             
                 Console.Write("Time duration for your activity in seconds: ");
                 string du = Console.ReadLine();
                 Console.WriteLine();
-                duration = int.Parse(du);
-
+                int duration = int.Parse(du);
+                Activity activity = new Activity(name,description,duration);
                
                 Console.Clear();
                 Console.WriteLine("Get ready....");
@@ -53,19 +52,20 @@ class Program
             {
                 string name = "Reflecting Activity";
                 string description = "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
-                int duration = 0;
-                Activity activity = new Activity(name,description,duration);
+                
+                Activity welcome = new Activity(name,description,0);
                 Console.WriteLine();
                 
-                activity.DisplayStartingMessage();
+                welcome.DisplayStartingMessage();
                 
             
                 Console.Write("Time duration for your activity in seconds: ");
                 string du = Console.ReadLine();
                 Console.WriteLine();
-                duration = int.Parse(du);
+                int duration = int.Parse(du);
+                Activity activity = new Activity(name,description,duration);
 
-               
+
                 Console.Clear();
 
                 ReflectingActivity reflectingActivity = new ReflectingActivity(name,description,duration);
@@ -104,17 +104,17 @@ class Program
             {
                 string name = "Listing Activity";
                 string description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
-                int duration = 0;
-                Activity activity = new Activity(name,description,duration);
+                Activity welcome = new Activity(name,description,0);
                 Console.WriteLine();
                 
-                activity.DisplayStartingMessage();
+                welcome.DisplayStartingMessage();
                 
             
                 Console.Write("Time duration for your activity in seconds: ");
                 string du = Console.ReadLine();
                 Console.WriteLine();
-                duration = int.Parse(du);
+                int duration = int.Parse(du);
+                Activity activity = new Activity(name,description,duration);
 
                
                 Console.Clear();

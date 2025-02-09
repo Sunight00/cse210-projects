@@ -29,7 +29,7 @@ namespace activity
             Console.WriteLine("Well done.");
             ShowSpinner(3);
             Console.WriteLine();
-            Console.WriteLine($"You have completed another {_duration} seconds of {_name}");
+            Console.WriteLine($"You have completed {_duration} seconds of {_name}");
         }
 
         public void ShowSpinner(int seconds)
