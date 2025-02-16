@@ -17,10 +17,10 @@ class Program
             Console.WriteLine("4. Load Goals");
             Console.WriteLine("5. Record Event");
             Console.WriteLine("6. Quit");
-            Console.Write("Select a choice from the options");
+            Console.Write("Select a choice from the options: ");
             string option = Console.ReadLine();
 
-
+            Console.WriteLine();
             if (option == "1")
             {
                 goalManager.ListGoalNames();
