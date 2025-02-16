@@ -22,8 +22,8 @@ namespace Goal
 
         public override bool IsComplete()
         {
-            return _IsComplete;
-        }
+            return true;
 
+        }
     }
 }
