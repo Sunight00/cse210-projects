@@ -21,7 +21,10 @@ namespace Goal
 
         public void ListGoalNames()
         {
-
+            Console.WriteLine("The Types Of Goal Are:");
+            Console.WriteLine("Simple Goal");
+            Console.WriteLine("Eternal Goal");
+            Console.WriteLine("Checklist Gaol");
         }
 
         public void ListGoalDetails()
