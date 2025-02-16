@@ -23,7 +23,7 @@ namespace Goal{
 
 
 
-        public virtual string GetDetails()
+        public virtual string GetDetailsString()
         {
             return "";
         }

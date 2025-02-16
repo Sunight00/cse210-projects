@@ -21,7 +21,7 @@ namespace Goal
             return true;
         }
 
-        public override string GetDetails()
+        public override string GetDetailsString()
         {
             return "";
         }
