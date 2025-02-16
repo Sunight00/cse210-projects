@@ -19,7 +19,11 @@ namespace Goal
         public override bool IsComplete()
         {
             return true;
+        }
 
+        public override string GetDetails()
+        {
+            return "";
         }
 
         public override string GetStringRepresentation()
