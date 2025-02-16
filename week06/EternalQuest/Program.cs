@@ -19,6 +19,13 @@ class Program
             Console.WriteLine("6. Quit");
             Console.Write("Select a choice from the options");
             string option = Console.ReadLine();
+
+
+            if (option == "1")
+            {
+                goalManager.ListGoalNames();
+            }
+
         }
     }
 }
