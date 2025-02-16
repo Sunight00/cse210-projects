@@ -2,7 +2,7 @@ namespace Goal
 {
     public class GoalManager
     {
-        private List<Goal> _goals;
+        private List<string> _goals;
         private int _score;
 
         
@@ -39,8 +39,13 @@ namespace Goal
             string description = Console.ReadLine();
             Console.Write("Points for goal? ");
             string points = Console.ReadLine();
-            Goal goal = $"{name} ({description})";
+             
+            string goal =$"{name} {description}";
             _goals.Add(goal);
+
+
+            double myDouble = 9.78;
+int myInt = (int) myDouble;
 
         }
 
