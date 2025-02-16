@@ -23,9 +23,26 @@ class Program
             Console.WriteLine();
             if (option == "1")
             {
-                goalManager.ListGoalNames();
+                Console.WriteLine("The Types Of Goal Are:");
+                Console.WriteLine("1. Simple Goal");
+                Console.WriteLine("2. Eternal Goal");
+                Console.WriteLine("3. Checklist Gaol");
+                Console.WriteLine("What type of goal would you love to create: ");
+                string goal = Console.ReadLine();
+                if (goal=="1")
+                {
+                    goalManager.CreateGoal();
+                }
+                else if (goal=="2")
+                {
+                    goalManager.CreateGoal();
+                }
+                else if (goal=="3")
+                {
+                    goalManager.CreateGoal();
+                }
             }
-            
+
 
         }
     }

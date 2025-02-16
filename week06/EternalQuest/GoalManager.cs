@@ -21,10 +21,7 @@ namespace Goal
 
         public void ListGoalNames()
         {
-            Console.WriteLine("The Types Of Goal Are:");
-            Console.WriteLine("1. Simple Goal");
-            Console.WriteLine("2. Eternal Goal");
-            Console.WriteLine("3. Checklist Gaol");
+           
 
             
         }
@@ -36,8 +33,12 @@ namespace Goal
 
         public void CreateGoal()
         {
-            Console.WriteLine("What type of goal would you love to create: ");
-            string goal = Console.ReadLine();b
+            Console.Write("What is the name of your goal? ");
+            string name = Console.ReadLine();
+            Console.Write("What is the description of it? ");
+            string description = Console.ReadLine();
+            Console.Write("Points for goal? ");
+            string points = Console.ReadLine();
 
         }
 
