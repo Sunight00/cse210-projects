@@ -25,6 +25,8 @@ namespace Goal
             Console.WriteLine("1. Simple Goal");
             Console.WriteLine("2. Eternal Goal");
             Console.WriteLine("3. Checklist Gaol");
+
+            
         }
 
         public void ListGoalDetails()
@@ -34,6 +36,8 @@ namespace Goal
 
         public void CreateGoal()
         {
+            Console.WriteLine("What type of goal would you love to create: ");
+            string goal = Console.ReadLine();b
 
         }
 

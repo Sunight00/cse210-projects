@@ -25,6 +25,7 @@ class Program
             {
                 goalManager.ListGoalNames();
             }
+            
 
         }
     }
