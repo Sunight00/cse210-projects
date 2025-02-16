@@ -39,6 +39,8 @@ namespace Goal
             string description = Console.ReadLine();
             Console.Write("Points for goal? ");
             string points = Console.ReadLine();
+            Goal goal = $"{name} ({description})";
+            _goals.Add(goal);
 
         }
 
