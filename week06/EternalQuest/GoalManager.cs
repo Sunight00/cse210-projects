@@ -111,8 +111,9 @@ namespace Goal
             string accomplish = Console.ReadLine();
             Console.WriteLine($"Congrats you have been awarded {_points[int.Parse(accomplish)-1]}");
             Console.WriteLine($"You now have {_points[int.Parse(accomplish)-1]} points");
+            _score=_score+_points[int.Parse(accomplish)-1];
+            Console.WriteLine();
 
-            
 
 
 
