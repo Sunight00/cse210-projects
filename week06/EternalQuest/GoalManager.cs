@@ -109,7 +109,7 @@ namespace Goal
             Console.WriteLine();
             Console.Write("What goal did you accomplish? ");
             string accomplish = Console.ReadLine();
-            Console.WriteLine($"Congrats you have been awarded {_points[int.Parse(accomplish)+1]}");
+            Console.WriteLine($"Congrats you have been awarded {_points[int.Parse(accomplish)-1]}");
 
 
 

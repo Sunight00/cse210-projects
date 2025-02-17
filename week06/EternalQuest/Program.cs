@@ -38,6 +38,10 @@ class Program
             {
                 goalManager.SaveGoals();
             }
+            else if (option =="5")
+            {
+                goalManager.RecordEvent();
+            }
 
 
 
