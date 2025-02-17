@@ -27,10 +27,11 @@ namespace Goal
         }
 
         public void ListGoalDetails()
-        {
+        {   int number =1;
            foreach(string goal in _goals)
            {
-                Console.WriteLine(goal);
+                Console.WriteLine($"{number}. {goal}");
+                number =number+1;
            }
         }
 
