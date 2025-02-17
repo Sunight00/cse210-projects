@@ -24,7 +24,7 @@ namespace Goal
 
         public override string GetDetailsString()
         {
-             return $"[ ] {_shortname} ({_description}) --- {_points} currently completed {_amountCompleted}/{_target}";
+             return $"[ ] {_shortname} ({_description}) --- currently completed {_amountCompleted}/{_target}";
         }
 
         public override string GetStringRepresentation()
