@@ -107,7 +107,10 @@ namespace Goal
         public void RecordEvent()
         {
             Console.WriteLine();
-            Console.WriteLine("What goal did you accomplish? ");
+            Console.Write("What goal did you accomplish? ");
+            string accomplish = Console.ReadLine();
+            Console.WriteLine($"Congrats you have been awarded {_points[int.Parse(accomplish)+1]}");
+
 
 
         }
