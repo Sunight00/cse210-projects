@@ -78,13 +78,10 @@ namespace Goal
                     Console.Write("Bonus for completing number of times? ");
                     string bonus = Console.ReadLine();
 
-
-
-
                     CheckListGoal checkListGoal = new CheckListGoal(name,description,int.Parse(points),int.Parse(times),int.Parse(bonus));
-                    string goal =$"[ ] {name} ({description})";
-                    _goals.Add(goal);
-                    Console.WriteLine(checkListGoal.GetDetailsString());
+                    string details= checkListGoal.GetDetailsString();
+                    //string goal =$"[ ] {name} ({description})";
+                    _goals.Add(details);       
                 }
 
 
