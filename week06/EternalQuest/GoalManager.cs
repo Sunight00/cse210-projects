@@ -4,6 +4,7 @@ namespace Goal
     {
         private List<string> _goals = new List<string>();
         private int _score = 0;
+        private List<int> _points = new List<int>();
 
         
         public GoalManager()
@@ -53,6 +54,7 @@ namespace Goal
                     
                     string goal =$"[ ] {name} ({description})";
                     _goals.Add(goal);
+                    _points.Add(int.Parse(points));
 
                     Console.WriteLine();
                 }
@@ -67,6 +69,7 @@ namespace Goal
                     EternalGoal eternalGoal = new EternalGoal(name,description,int.Parse(points));
                     string goal =$"[ ] {name} ({description})";
                     _goals.Add(goal);
+                    _points.Add(int.Parse(points));
 
                     Console.WriteLine();
                 }
@@ -87,6 +90,7 @@ namespace Goal
                     string details= checkListGoal.GetDetailsString();
                     //string goal =$"[ ] {name} ({description})";
                     _goals.Add(details);
+                    _points.Add(int.Parse(points));
                     Console.WriteLine();       
                 }
 
@@ -102,6 +106,9 @@ namespace Goal
 
         public void RecordEvent()
         {
+            Console.WriteLine();
+            Console.WriteLine("What goal did you accomplish? ");
+
 
         }
 
