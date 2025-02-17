@@ -27,7 +27,9 @@ namespace Goal
         }
 
         public void ListGoalDetails()
-        {   int number =1;
+        {  
+            Console.WriteLine("The goals are: ");
+            int number =1;
            foreach(string goal in _goals)
            {
                 Console.WriteLine($"{number}. {goal}");
@@ -44,7 +46,7 @@ namespace Goal
             Console.Write("Points for goal? ");
             string points = Console.ReadLine();
             
-            string goal =$"{name} {description}";
+            string goal =$"[ ] {name} ({description})";
             _goals.Add(goal);
 
 
