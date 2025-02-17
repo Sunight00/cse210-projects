@@ -39,15 +39,31 @@ namespace Goal
 
         public void CreateGoal()
         {
-            Console.Write("What is the name of your goal? ");
-            string name = Console.ReadLine();
-            Console.Write("What is the description of it? ");
-            string description = Console.ReadLine();
-            Console.Write("Points for goal? ");
-            string points = Console.ReadLine();
+            string goalChoice = Console.ReadLine();
+                if (goalChoice=="1")
+                {
+                     Console.Write("What is the name of your goal? ");
+                    string name = Console.ReadLine();
+                    Console.Write("What is the description of it? ");
+                    string description = Console.ReadLine();
+                    Console.Write("Points for goal? ");
+                    string points = Console.ReadLine();
+                    string goal =$"[ ] {name} ({description})";
+                    _goals.Add(goal);
+                }
+                else if (goalChoice=="2")
+                {
+                    
+                }
+                else if (goalChoice=="3")
+                {
+                    
+                }
+
+
+
             
-            string goal =$"[ ] {name} ({description})";
-            _goals.Add(goal);
+           
 
 
    
