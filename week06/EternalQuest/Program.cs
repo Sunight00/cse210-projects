@@ -6,10 +6,12 @@ class Program
     static void Main(string[] args)
     {
         GoalManager goalManager = new GoalManager();
-        goalManager.DisplayPlayerInfo();
+       
 
         while (true)
         {
+            goalManager.DisplayPlayerInfo();
+            Console.WriteLine();
             Console.WriteLine("Menu Options:");
             Console.WriteLine("1. Create New Goals");
             Console.WriteLine("2. List Goal");
