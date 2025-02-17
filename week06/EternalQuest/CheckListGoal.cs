@@ -6,7 +6,7 @@ namespace Goal
         private int _target;
         private int _bonus;
 
-        public CheckListGoal(string name, string description, int points): base(name,description,points)
+        public CheckListGoal(string name, string description, int points,int target, int bonus): base(name,description,points)
         {
 
         }
