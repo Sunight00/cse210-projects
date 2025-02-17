@@ -34,6 +34,11 @@ class Program
             {
                 goalManager.ListGoalDetails();
             }
+            else if (option =="3")
+            {
+                goalManager.SaveGoals();
+            }
+
 
 
         }

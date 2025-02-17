@@ -50,6 +50,7 @@ namespace Goal
                     Console.Write("Points for goal? ");
                     string points = Console.ReadLine();
                     SimpleGoal simpleGoal = new SimpleGoal(name,description,int.Parse(points));
+                    
                     string goal =$"[ ] {name} ({description})";
                     _goals.Add(goal);
 
@@ -105,7 +106,11 @@ namespace Goal
         }
 
         public void SaveGoals()
-        {
+        {   
+            Console.WriteLine();
+            Console.WriteLine("What is the name of the file: ");
+            string fileName= Console.ReadLine();
+
 
         }
 
