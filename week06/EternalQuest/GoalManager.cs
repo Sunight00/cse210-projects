@@ -40,6 +40,7 @@ namespace Goal
         public void CreateGoal()
         {
             string goalChoice = Console.ReadLine();
+            Console.WriteLine(); 
                 if (goalChoice=="1")
                 {
                     Console.Write("What is the name of your goal? ");
@@ -66,7 +67,24 @@ namespace Goal
                 }
                 else if (goalChoice=="3")
                 {
-                    
+                    Console.Write("What is the name of your goal? ");
+                    string name = Console.ReadLine();
+                    Console.Write("What is the description of it? ");
+                    string description = Console.ReadLine();
+                    Console.Write("Points for goal? ");
+                    string points = Console.ReadLine();
+                    Console.Write("How many times does this goal need to be accomplished before a bonus? ");
+                    string times = Console.ReadLine();
+                    Console.Write("Bonus for completing number of times? ");
+                    string bonus = Console.ReadLine();
+
+
+
+
+                    CheckListGoal checkListGoal = new CheckListGoal(name,description,int.Parse(points));
+                    string goal =$"[ ] {name} ({description})";
+                    _goals.Add(goal);
+                    Console.WriteLine();
                 }
 
 
