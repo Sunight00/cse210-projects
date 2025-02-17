@@ -28,7 +28,10 @@ namespace Goal
 
         public void ListGoalDetails()
         {
-
+           foreach(string goal in _goals)
+           {
+                Console.WriteLine(goal);
+           }
         }
 
         public void CreateGoal()
@@ -40,12 +43,11 @@ namespace Goal
             Console.Write("Points for goal? ");
             string points = Console.ReadLine();
              
-            string goal =$"{name} {description}";
+           string goal =$"{name} {description}";
             _goals.Add(goal);
 
 
-            double myDouble = 9.78;
-int myInt = (int) myDouble;
+   
 
         }
 

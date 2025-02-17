@@ -18,7 +18,7 @@ namespace Goal
 
         public override string GetStringRepresentation()
         {
-            return $"{_shortname}: {_description} - {_points} points";
+           return "";
         }
 
         public override bool IsComplete()

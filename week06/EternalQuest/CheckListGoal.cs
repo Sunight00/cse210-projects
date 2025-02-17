@@ -23,12 +23,12 @@ namespace Goal
 
         public override string GetDetailsString()
         {
-            return "";
+             return $"{_shortname}: {_description} - {_points} points ({_amountCompleted}/{_target})";
         }
 
         public override string GetStringRepresentation()
         {
-            return $"{_shortname}: {_description} - {_points} points";
+           return "";
         }
 
 

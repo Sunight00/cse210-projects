@@ -42,6 +42,10 @@ class Program
                     goalManager.CreateGoal();
                 }
             }
+            else if (option =="2")
+            {
+                goalManager.ListGoalNames();
+            }
 
 
         }
