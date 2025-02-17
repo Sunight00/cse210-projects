@@ -52,6 +52,8 @@ namespace Goal
                     SimpleGoal simpleGoal = new SimpleGoal(name,description,int.Parse(points));
                     string goal =$"[ ] {name} ({description})";
                     _goals.Add(goal);
+
+                    Console.WriteLine();
                 }
                 else if (goalChoice=="2")
                 {
@@ -64,6 +66,8 @@ namespace Goal
                     EternalGoal eternalGoal = new EternalGoal(name,description,int.Parse(points));
                     string goal =$"[ ] {name} ({description})";
                     _goals.Add(goal);
+
+                    Console.WriteLine();
                 }
                 else if (goalChoice=="3")
                 {
@@ -81,7 +85,8 @@ namespace Goal
                     CheckListGoal checkListGoal = new CheckListGoal(name,description,int.Parse(points),int.Parse(times),int.Parse(bonus));
                     string details= checkListGoal.GetDetailsString();
                     //string goal =$"[ ] {name} ({description})";
-                    _goals.Add(details);       
+                    _goals.Add(details);
+                    Console.WriteLine();       
                 }
 
 
