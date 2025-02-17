@@ -8,7 +8,8 @@ namespace Goal
 
         public CheckListGoal(string name, string description, int points,int target, int bonus): base(name,description,points)
         {
-
+            _target=target;
+            _bonus=bonus;
         }
 
         public override void RecordEvent()
