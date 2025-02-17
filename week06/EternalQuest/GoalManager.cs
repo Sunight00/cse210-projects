@@ -84,7 +84,7 @@ namespace Goal
                     CheckListGoal checkListGoal = new CheckListGoal(name,description,int.Parse(points),int.Parse(times),int.Parse(bonus));
                     string goal =$"[ ] {name} ({description})";
                     _goals.Add(goal);
-                    Console.WriteLine();
+                    Console.WriteLine(checkListGoal.GetDetailsString());
                 }
 
 
