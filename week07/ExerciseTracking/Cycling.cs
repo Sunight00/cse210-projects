@@ -2,16 +2,11 @@ namespace Sport
 {
     public class Cycling:Sport
     {
-        private double _distance;
-    private double _speed;
-    private int _laps;
+       
+        private double _speed;
+
     
-    public Cycling(double distance, double speed, int laps)
-    {
-        _distance=distance;
-        _laps=laps;
-        _speed=speed;
-    }
+
 
     public override void Distance()
     {

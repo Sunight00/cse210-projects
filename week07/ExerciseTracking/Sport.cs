@@ -4,11 +4,18 @@ namespace Sport
     {
         private int _length;
         DateTime _date = DateTime.Now;
+
+
             
 
         public Sport()
         {
             
+        }
+
+        public void setDistance( )
+        {
+
         }
 
         public void displayDate()
