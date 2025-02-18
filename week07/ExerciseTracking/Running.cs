@@ -22,7 +22,7 @@ namespace Sport
     {
         return (_distance/getduration())*60;
     }
-    
+
     public override double GetPace()
     {
         return  getduration()/_distance;
