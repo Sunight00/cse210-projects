@@ -16,7 +16,7 @@ namespace Sport
             Console.WriteLine(_date);
         }
 
-        public abstract void getDistance();
+        public abstract void Distance();
         public abstract void Speed();
         public abstract void Pace();
 
