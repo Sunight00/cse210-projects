@@ -3,14 +3,13 @@ namespace Sport
     public abstract class Sport
     {
         private int _length;
-        DateTime _date = DateTime.Now;
-
-
+        private string _date;
             
 
-        public Sport()
+        public Sport(string date, int length)
         {
-            
+            _date=date;
+            _length=length;
         }
 
         public void setDistance( )
@@ -23,9 +22,15 @@ namespace Sport
             Console.WriteLine(_date);
         }
 
-        public abstract void Distance();
-        public abstract void Speed();
-        public abstract void Pace();
+        public abstract void GetDistance();
+        public abstract void GetSpeed();
+        public abstract void GetPace();
+
+
+        public string GetSummary()
+    {
+        return $"{_date} {GetType().Name} ({_length} min) - Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
+    }
 
 
     }

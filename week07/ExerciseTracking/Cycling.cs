@@ -7,18 +7,24 @@ namespace Sport
 
     
 
+    public Cycling(string date, int length):base(date,length)
+    {
+            
+    }
 
-    public override void Distance()
+
+    public override void GetDistance()
+    {
+        
+    }
+    public override void GetSpeed()
     {
 
     }
-    public override void Speed()
+    public override void GetPace()
     {
 
-    }
-    public override void Pace()
-    {
 
-    }
+    }   
     }
 }
