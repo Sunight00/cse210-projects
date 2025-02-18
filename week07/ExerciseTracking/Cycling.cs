@@ -1,4 +1,4 @@
-/*namespace Sport
+namespace Sport
 {
     public class Cycling:Sport
     {
@@ -7,24 +7,24 @@
 
     
 
-    public Cycling(string date, int length):base(date,length)
+    public Cycling(string date, int length, double speed):base(date,length)
     {
-            
+        _speed = speed;       
     }
 
 
-    public override void GetDistance()
+    public override double GetDistance()
     {
-        
+        return (_speed/60)*getduration();   
     }
-    public override void GetSpeed()
+    public override double GetSpeed()
     {
-
+        return _speed;
     }
-    public override void GetPace()
+    public override double GetPace()
     {
-
+        return 60/_speed;
 
     }   
     }
-}*/
+}

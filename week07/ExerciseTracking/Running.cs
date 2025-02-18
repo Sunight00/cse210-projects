@@ -20,8 +20,9 @@ namespace Sport
     }
     public override double GetSpeed()
     {
-        return _distance/getduration();
+        return (_distance/getduration())*60;
     }
+    
     public override double GetPace()
     {
         return  getduration()/_distance;
