@@ -29,6 +29,7 @@ namespace Goal
 
         public void ListGoalDetails()
         {  
+            
             Console.WriteLine("The goals are: ");
             int number =1;
            foreach(string goal in _goals)
@@ -52,7 +53,7 @@ namespace Goal
                     string points = Console.ReadLine();
                     SimpleGoal simpleGoal = new SimpleGoal(name,description,int.Parse(points));
                     
-                    string goal =$"[ ] {name} ({description})";
+                    string goal = simpleGoal.GetDetailsString();
                     _goals.Add(goal);
                     _points.Add(int.Parse(points));
 
@@ -67,7 +68,7 @@ namespace Goal
                     Console.Write("Points for goal? ");
                     string points = Console.ReadLine();
                     EternalGoal eternalGoal = new EternalGoal(name,description,int.Parse(points));
-                    string goal =$"[ ] {name} ({description})";
+                    string goal =eternalGoal.GetDetailsString();
                     _goals.Add(goal);
                     _points.Add(int.Parse(points));
 
@@ -94,13 +95,6 @@ namespace Goal
                     Console.WriteLine();       
                 }
 
-
-
-            
-           
-
-
-   
 
         }
 
