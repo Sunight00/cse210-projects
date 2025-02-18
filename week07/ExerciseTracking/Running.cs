@@ -6,9 +6,9 @@ namespace Sport
    
     
 
-    public Running(string date, int length):base(date,length)
+    public Running(string date, int length,double distance):base(date,length)
     {
-            
+            _distance=distance;
     }
 
 
