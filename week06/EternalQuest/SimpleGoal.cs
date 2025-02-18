@@ -14,7 +14,6 @@ namespace Goal
         public override void RecordEvent()
         {
             
-
         }
 
         public override string GetStringRepresentation()

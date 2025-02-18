@@ -1,9 +1,12 @@
 using System;
 
-class Program
+namespace Sport
+{
+    class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
+        
     }
+}
 }
