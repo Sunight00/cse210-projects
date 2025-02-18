@@ -9,7 +9,7 @@ namespace Sport
         Running run = new Running("4th Nov 2033",30,3);
         Console.WriteLine(run.GetSummary());
 
-        Cycling cycling = new Cycling("4th Nov 2033",30,3);
+        Cycling cycling = new Cycling("4th Nov 2033",30,12);
         Console.WriteLine(cycling.GetSummary());
     }
 }
