@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Sport
 {
     public class Running:Sport
@@ -12,17 +14,17 @@ namespace Sport
     }
 
 
-    public override void GetDistance()
+    public override double GetDistance()
     {
-        
+        return _distance;
     }
-    public override void GetSpeed()
+    public override double GetSpeed()
     {
-
+        return _distance/getduration();
     }
-    public override void GetPace()
+    public override double GetPace()
     {
-
+        return  getduration()/_distance;
 
     }
 }

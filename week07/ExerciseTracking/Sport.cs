@@ -12,20 +12,15 @@ namespace Sport
             _length=length;
         }
 
-        public void setDistance( )
+
+        public abstract double GetDistance();
+        public abstract double GetSpeed();
+        public abstract double GetPace();
+
+        public int getduration()
         {
-
+            return _length;
         }
-
-        public void displayDate()
-        {
-            Console.WriteLine(_date);
-        }
-
-        public abstract void GetDistance();
-        public abstract void GetSpeed();
-        public abstract void GetPace();
-
 
         public string GetSummary()
     {
