@@ -1,4 +1,4 @@
-namespace Sport
+/*namespace Sport
 {
     public class Swimming:Sport
     {
@@ -25,4 +25,4 @@ namespace Sport
 
     }
     }
-}
+}*/

@@ -1,4 +1,4 @@
-namespace Sport
+/*namespace Sport
 {
     public class Cycling:Sport
     {
@@ -27,4 +27,4 @@ namespace Sport
 
     }   
     }
-}
+}*/
