@@ -32,7 +32,7 @@ namespace Goal
             
             Console.WriteLine("The goals are: ");
             int number =1;
-           foreach(string goal in _goals)
+           foreach(Goal goal in _goals)
            {
                 Console.WriteLine($"{number}. {goal}");
                 number =number+1;
