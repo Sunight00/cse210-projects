@@ -2,7 +2,7 @@ namespace Goal
 {
     public class GoalManager
     {
-        private List<string> _goals = new List<string>();
+        private List<Goal> _goals = new List<Goal>();
         private int _score = 0;
         private List<int> _points = new List<int>();
 
@@ -53,8 +53,8 @@ namespace Goal
                     string points = Console.ReadLine();
                     SimpleGoal simpleGoal = new SimpleGoal(name,description,int.Parse(points));
                     
-                    string goal = simpleGoal.GetDetailsString();
-                    _goals.Add(goal);
+                    
+                    _goals.Add(simpleGoal);
                     _points.Add(int.Parse(points));
 
                     Console.WriteLine();
@@ -68,8 +68,8 @@ namespace Goal
                     Console.Write("Points for goal? ");
                     string points = Console.ReadLine();
                     EternalGoal eternalGoal = new EternalGoal(name,description,int.Parse(points));
-                    string goal =eternalGoal.GetDetailsString();
-                    _goals.Add(goal);
+                    
+                    _goals.Add(eternalGoal);
                     _points.Add(int.Parse(points));
 
                     Console.WriteLine();
@@ -88,9 +88,9 @@ namespace Goal
                     string bonus = Console.ReadLine();
 
                     CheckListGoal checkListGoal = new CheckListGoal(name,description,int.Parse(points),int.Parse(times),int.Parse(bonus));
-                    string details= checkListGoal.GetDetailsString();
+                    
                     //string goal =$"[ ] {name} ({description})";
-                    _goals.Add(details);
+                    _goals.Add(checkListGoal);
                     _points.Add(int.Parse(points));
                     Console.WriteLine();       
                 }
