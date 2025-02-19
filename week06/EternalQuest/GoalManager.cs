@@ -34,7 +34,7 @@ namespace Goal
             int number =1;
            foreach(Goal goal in _goals)
            {
-                Console.WriteLine($"{number}. {goal}");
+                Console.WriteLine($"{number}. {goal.GetDetailsString()}");
                 number =number+1;
            }
         }

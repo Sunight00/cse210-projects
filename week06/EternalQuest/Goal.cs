@@ -25,7 +25,7 @@ namespace Goal{
 
         public virtual string GetDetailsString()
         {
-            return $"[ ] {_shortname}: {_description} - {_points} points";
+            return $"[ ] {_shortname}: ({_description}) - {_points} points";
         }
 
 
